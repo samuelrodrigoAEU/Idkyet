@@ -1,0 +1,36 @@
+@page { size: A4; margin: 16mm 15mm 18mm; }
+:root { --verde:#1F4D3A; --mostarda:#E8A33D; --creme:#FBF6EC; --tomate:#C0392B; --tinta:#1d1d1b; }
+* { box-sizing: border-box; }
+body { font-family: Inter, "DejaVu Sans", sans-serif; color: var(--tinta); font-size: 10.5pt; line-height: 1.5; background:#fff; margin:0; }
+header#title-block-header { display:none; }
+h1,h2,h3 { font-family: "Inter Display", Inter, sans-serif; color: var(--verde); line-height:1.2; }
+h2 { font-size: 20pt; border-bottom: 3px solid var(--mostarda); padding-bottom: 4px; margin-top: 0; }
+h3 { font-size: 13pt; margin: 18px 0 6px; }
+.pagina { page-break-before: always; }
+.capa { height: 262mm; background: var(--verde); color: var(--creme); padding: 40mm 18mm; position: relative; border-radius: 4px; }
+.capa h1 { color: var(--creme); font-size: 54pt; margin: 18px 0 10px; letter-spacing: -1px; }
+.capa h1::after { content:""; display:block; width: 90px; height: 8px; background: var(--mostarda); margin-top: 14px; border-radius: 4px; }
+.capa .selo { background: var(--mostarda); color: var(--verde); font-weight: 700; padding: 5px 10px; font-size: 9pt; letter-spacing: 1.5px; border-radius: 3px; }
+.capa .sub { display:block; font-size: 17pt; line-height: 1.35; max-width: 150mm; margin-top: 20px; }
+.capa .inclui { display:block; margin-top: 40mm; font-size: 11pt; border-top: 1px solid rgba(251,246,236,.4); padding-top: 10px; }
+.capa .edicao { position:absolute; bottom: 18mm; left: 18mm; font-size: 9pt; opacity:.8; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0 14px; font-size: 9.5pt; page-break-inside: avoid; }
+th { background: var(--verde); color: #fff; text-align: left; padding: 6px 8px; }
+td { border-bottom: 1px solid #e3ddd0; padding: 5px 8px; vertical-align: top; }
+tr:nth-child(even) td { background: var(--creme); }
+blockquote { background: #F3F7F4; border-left: 4px solid var(--verde); margin: 8px 0 14px; padding: 8px 12px; border-radius: 0 6px 6px 0; page-break-inside: avoid; }
+blockquote p { margin: 2px 0; }
+.dica, .atencao { padding: 10px 14px; border-radius: 6px; margin: 14px 0; page-break-inside: avoid; }
+.dica { background: #FFF4D6; border: 1px solid var(--mostarda); }
+.atencao { background: #FBE5E1; border: 1px solid var(--tomate); }
+.dia { background: var(--verde); color: #fff; padding: 2px 14px; border-radius: 6px; margin-top: 22px; page-break-after: avoid; }
+.dia h3 { color: #fff; }
+.dia strong { color: var(--mostarda); }
+ul.task-list { list-style: none; padding-left: 4px; }
+.rodape-final { margin-top: 24px; font-size: 8.5pt; color: #666; border-top: 1px solid #ddd; padding-top: 8px; }
+p strong { color: #13372a; }
+@media screen { body { max-width: 820px; margin: 0 auto; padding: 16px; } .capa { height:auto; min-height: 90vh; } }
+.ficha + .ficha { page-break-before: always; }
+.ficha td { height: 9mm; }
+.ficha h2 { font-size: 15pt; }
+p:has(+ blockquote), h3 { break-after: avoid; }

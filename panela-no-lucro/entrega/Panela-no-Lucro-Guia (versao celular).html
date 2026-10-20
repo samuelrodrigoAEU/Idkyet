@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Panela no Lucro</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">@page { size: A4; margin: 16mm 15mm 18mm; }
+:root { --verde:#1F4D3A; --mostarda:#E8A33D; --creme:#FBF6EC; --tomate:#C0392B; --tinta:#1d1d1b; }
+* { box-sizing: border-box; }
+body { font-family: Inter, "DejaVu Sans", sans-serif; color: var(--tinta); font-size: 10.5pt; line-height: 1.5; background:#fff; margin:0; }
+header#title-block-header { display:none; }
+h1,h2,h3 { font-family: "Inter Display", Inter, sans-serif; color: var(--verde); line-height:1.2; }
+h2 { font-size: 20pt; border-bottom: 3px solid var(--mostarda); padding-bottom: 4px; margin-top: 0; }
+h3 { font-size: 13pt; margin: 18px 0 6px; }
+.pagina { page-break-before: always; }
+.capa { height: 262mm; background: var(--verde); color: var(--creme); padding: 40mm 18mm; position: relative; border-radius: 4px; }
+.capa h1 { color: var(--creme); font-size: 54pt; margin: 18px 0 10px; letter-spacing: -1px; }
+.capa h1::after { content:""; display:block; width: 90px; height: 8px; background: var(--mostarda); margin-top: 14px; border-radius: 4px; }
+.capa .selo { background: var(--mostarda); color: var(--verde); font-weight: 700; padding: 5px 10px; font-size: 9pt; letter-spacing: 1.5px; border-radius: 3px; }
+.capa .sub { display:block; font-size: 17pt; line-height: 1.35; max-width: 150mm; margin-top: 20px; }
+.capa .inclui { display:block; margin-top: 40mm; font-size: 11pt; border-top: 1px solid rgba(251,246,236,.4); padding-top: 10px; }
+.capa .edicao { position:absolute; bottom: 18mm; left: 18mm; font-size: 9pt; opacity:.8; }
+table { border-collapse: collapse; width: 100%; margin: 10px 0 14px; font-size: 9.5pt; page-break-inside: avoid; }
+th { background: var(--verde); color: #fff; text-align: left; padding: 6px 8px; }
+td { border-bottom: 1px solid #e3ddd0; padding: 5px 8px; vertical-align: top; }
+tr:nth-child(even) td { background: var(--creme); }
+blockquote { background: #F3F7F4; border-left: 4px solid var(--verde); margin: 8px 0 14px; padding: 8px 12px; border-radius: 0 6px 6px 0; page-break-inside: avoid; }
+blockquote p { margin: 2px 0; }
+.dica, .atencao { padding: 10px 14px; border-radius: 6px; margin: 14px 0; page-break-inside: avoid; }
+.dica { background: #FFF4D6; border: 1px solid var(--mostarda); }
+.atencao { background: #FBE5E1; border: 1px solid var(--tomate); }
+.dia { background: var(--verde); color: #fff; padding: 2px 14px; border-radius: 6px; margin-top: 22px; page-break-after: avoid; }
+.dia h3 { color: #fff; }
+.dia strong { color: var(--mostarda); }
+ul.task-list { list-style: none; padding-left: 4px; }
+.rodape-final { margin-top: 24px; font-size: 8.5pt; color: #666; border-top: 1px solid #ddd; padding-top: 8px; }
+p strong { color: #13372a; }
+@media screen { body { max-width: 820px; margin: 0 auto; padding: 16px; } .capa { height:auto; min-height: 90vh; } }
+.ficha + .ficha { page-break-before: always; }
+.ficha td { height: 9mm; }
+.ficha h2 { font-size: 15pt; }
+p:has(+ blockquote), h3 { break-after: avoid; }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Panela no Lucro</h1>
+</header>
+<div class="capa">
+<p><span class="selo">COZINHA DE CASA · CONTA DE GENTE GRANDE</span></p>
+<h1 id="panela-no-lucro">Panela no Lucro</h1>
+<p><span class="sub">O sistema de 7 dias para quem vende comida feita em
+casa descobrir o lucro real de cada pedido, cobrar o preço certo e parar
+de trabalhar de graça.</span></p>
+<p><span class="inclui">Guia de execução · Planilha completa · 24
+mensagens de WhatsApp · Fichas para imprimir</span></p>
+<p><span class="edicao">Edição 1 · outubro de 2026</span></p>
+</div>
+<section id="o-que-você-vai-ter-no-fim-dos-7-dias" class="pagina">
+<h2>O que você vai ter no fim dos 7 dias</h2>
+<p>Separe uns <strong>40 minutos por dia</strong>. Não é uma promessa de
+renda: é a lista do que estará <strong>pronto e na sua mão</strong>:</p>
+<ol type="1">
+<li>O <strong>custo real</strong> de cada produto que você vende:
+ingrediente, embalagem, gás e a sua hora.</li>
+<li>Um <strong>preço mínimo</strong> (abaixo dele você paga para
+trabalhar) e um <strong>preço sugerido</strong> (com lucro) para cada
+item, inclusive para vender no app.</li>
+<li>A <strong>taxa de entrega</strong> de cada bairro, calculada pelo
+seu custo, e não “pelo que a vizinha cobra”.</li>
+<li>Um <strong>cardápio da semana por encomenda</strong>, com sinal no
+Pix e lista de compras automática.</li>
+<li>Um <strong>painel do mês</strong> que mostra quanto sobrou de
+verdade e <strong>quanto você ganhou por hora</strong>.</li>
+<li><strong>Mensagens prontas</strong> para reajustar preço, cobrar
+sinal, recusar desconto e recuperar cliente sumido.</li>
+</ol>
+<p>Você confere cada item sozinha(o): ou ele está na planilha, ou não
+está.</p>
+<h3 id="para-quem-é">Para quem é</h3>
+<p>Para quem <strong>já vende</strong> (ou vai começar este mês)
+marmita, salgado, doce, bolo, torta, caldo, pão, salgadinho de festa ou
+qualquer comida feita em casa, pelo WhatsApp, Instagram, na vizinhança,
+no trabalho ou no app, e sente isto: <em>“trabalho o fim de semana
+inteiro, vendo tudo, e no fim do mês não sei para onde o dinheiro
+foi.”</em></p>
+<h3 id="para-quem-não-é">Para quem não é</h3>
+<p>Para quem procura “renda garantida” ou receita de comida. Aqui não
+tem receita. Tem <strong>conta</strong>, <strong>organização</strong> e
+<strong>mensagens para vender melhor o que você já faz</strong>.</p>
+<h3 id="como-usar-este-material">Como usar este material</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Arquivo</th>
+<th>Para que serve</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Este guia</strong></td>
+<td>Diz o que fazer em cada dia, em que ordem e por quê.</td>
+</tr>
+<tr class="even">
+<td><strong>Planilha-Panela-no-Lucro.xlsx</strong></td>
+<td>Faz todas as contas. Abre no Excel, no Google Planilhas (celular ou
+computador) e no LibreOffice (gratuito).</td>
+</tr>
+<tr class="odd">
+<td><strong>Mensagens-WhatsApp.docx</strong></td>
+<td>As 24 mensagens deste guia num arquivo editável, para copiar e
+colar.</td>
+</tr>
+<tr class="even">
+<td><strong>Fichas-para-imprimir.pdf</strong></td>
+<td>Para quem prefere anotar no papel antes de digitar.</td>
+</tr>
+</tbody>
+</table>
+<div class="dica">
+<p><strong>Na planilha, as células amarelas você preenche e as verdes
+ela calcula.</strong> Ela já vem com o exemplo da <em>Cozinha da
+Cláudia</em> (um negócio <strong>fictício</strong>, criado para
+demonstração), assim você vê tudo funcionando antes de pôr os seus
+números.</p>
+</div>
+</section>
+<section id="parte-1-os-7-vazamentos-que-fazem-o-dinheiro-sumir" class="pagina">
+<h2>Parte 1 · Os 7 vazamentos que fazem o dinheiro sumir</h2>
+<p>Em 2026, o Sebrae-SP ouviu 400 microempreendedores de marmita no
+estado de São Paulo. O desafio mais citado foi <strong>controle de
+custos (42%)</strong>, à frente da concorrência (38%) e da logística de
+entrega (29%). Esse é o problema que este material resolve. Quase sempre
+o dinheiro escapa por um destes sete furos:</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Vazamento</th>
+<th>Como aparece no dia a dia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Custo só do ingrediente</strong></td>
+<td>“Gastei R$ 50 no mercado e vendi R$ 110, lucrei R$ 60.” Faltou
+embalagem, gás, óleo, etiqueta, taxa e você.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>A sua hora vale zero</strong></td>
+<td>6 horas de cozinha entram na conta como se fossem de graça.</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Preço copiado</strong></td>
+<td>“A moça do bairro cobra R$ 18.” O custo dela não é o seu.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Entrega de graça ou “chutada”</strong></td>
+<td>R$ 5 para qualquer lugar. Para o bairro mais longe, você paga para
+entregar.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Desconto de festa</strong></td>
+<td>O cento de salgado sai mais barato “porque é muito”, mas o trabalho
+por unidade é o mesmo.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>Produção sem pedido</strong></td>
+<td>Faz 20 marmitas “para pronta-entrega”, vende 13 e as 7 que sobram
+comem o lucro das outras.</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><strong>Dinheiro do negócio misturado com o da casa</strong></td>
+<td>O Pix cai na conta de casa e vira supermercado. Você nunca vê o
+resultado.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="o-exemplo-que-dói-hipotético-calculado-na-planilha">O exemplo
+que dói (hipotético, calculado na planilha)</h3>
+<p>Na Cozinha da Cláudia, a <strong>coxinha de frango</strong> custa
+<strong>R$ 1,47 de material</strong> (massa, recheio, óleo, gás,
+embalagem). Somando o tempo de preparo a R$ 15/h, o custo total vai a
+<strong>R$ 2,67 por unidade</strong>.</p>
+<p>Ela vendeu <strong>200 coxinhas para a festa da igreja a R$
+1,60</strong> (“o cento a R$ 160, preço de amiga”).</p>
+<ul>
+<li>Recebeu: <strong>R$ 320</strong></li>
+<li>Gastou de material: <strong>R$ 294,96</strong></li>
+<li>Gastou de entrega: <strong>R$ 8,54</strong></li>
+<li>Sobraram <strong>R$ 16,50</strong> para pagar umas <strong>16 horas
+de trabalho</strong> (4 receitas de 4 horas): cerca de <strong>R$ 1 por
+hora</strong>.</li>
+</ul>
+<p>Ela “vendeu muito” e trabalhou praticamente de graça. A planilha
+marca esse pedido em <strong>vermelho</strong>. A Parte 2 mostra como
+evitar que isso se repita.</p>
+<div class="atencao">
+<p><strong>Lucro não é o que entra no Pix.</strong> O que entra no Pix é
+faturamento. Lucro é o que sobra depois de pagar <strong>tudo</strong>,
+inclusive você.</p>
+</div>
+<h3 id="três-números-que-você-vai-aprender-a-separar">Três números que
+você vai aprender a separar</h3>
+<ul>
+<li><strong>Faturamento</strong>: tudo o que o cliente pagou.</li>
+<li><strong>Dinheiro que sobrou para você</strong>: faturamento menos
+material, taxas, entregas e custos fixos. É o que realmente remunera o
+seu trabalho.</li>
+<li><strong>Lucro do negócio</strong>: o que sobra
+<strong>depois</strong> de pagar a sua hora. É a reserva para crescer,
+trocar a panela e aguentar o mês fraco.</li>
+</ul>
+</section>
+<section id="parte-2-o-método-em-7-dias" class="pagina">
+<h2>Parte 2 · O método em 7 dias</h2>
+<p>Cada dia tem <strong>tarefa</strong>, <strong>por quê</strong>,
+<strong>como fazer</strong>, <strong>erros comuns</strong> e
+<strong>“pronto quando”</strong>. Não pule a ordem: cada dia usa os
+números do dia anterior.</p>
+<section id="dia-1-seus-números-de-base-aba-config-30-min" class="dia">
+<h3>Dia 1 · Seus números de base (aba <strong>Config</strong>) · 30
+min</h3>
+</section>
+<p><strong>Por quê:</strong> sem esses números, nenhum preço fecha. É
+aqui que você dá valor à sua hora.</p>
+<p><strong>Como fazer:</strong></p>
+<ol type="1">
+<li><strong>Valor da sua hora.</strong> Responda: <em>“quanto eu
+aceitaria por hora para fazer outro trabalho?”</em> Esse é o mínimo. Se
+não souber, use o salário mínimo dividido por 220 horas (dá uns R$ 7/h).
+A maioria das pessoas que fazem a conta escolhe entre R$ 12 e R$ 20.
+Comece com um valor honesto: dá para ajustar depois.</li>
+<li><strong>Margem de lucro.</strong> Comece com <strong>20%</strong>. É
+a fatia do preço que fica para o negócio.</li>
+<li><strong>Gás.</strong> Ponha o preço do último botijão. Para saber
+quanto ele dura: no dia da troca, cole um papel na geladeira e anote, a
+cada fornada, quantas bocas e quantos minutos usou (forno conta como 3
+bocas). Até medir, use <strong>60 horas</strong>.</li>
+<li><strong>Combustível e veículo</strong>, se você mesma(o)
+entrega.</li>
+<li><strong>Taxas.</strong> Veja no extrato da maquininha quanto ela
+desconta no débito e no crédito. Para o app de delivery, some comissão e
+taxa de pagamento do seu plano.</li>
+<li><strong>Custos fixos do mês.</strong> Compare a conta de luz e de
+água de antes e de depois de começar a vender. Some a parte do celular,
+a guia do MEI (se tiver) e a reposição de utensílios.</li>
+<li><strong>Faturamento esperado.</strong> Use a média dos últimos 2 ou
+3 meses. Se está começando, chute <strong>baixo</strong>.</li>
+</ol>
+<p><strong>Erros comuns:</strong></p>
+<ul>
+<li>Pôr R$ 0 na hora “porque estou começando”. Assim, o preço mínimo
+nunca vai te pagar.</li>
+<li>Margem de 60% ou 80%. A planilha avisa quando margem + taxa + fixos
+passam de 90%, porque aí a conta não fecha.</li>
+</ul>
+<p><strong>Pronto quando:</strong> a célula <strong>Alerta</strong> da
+aba Config mostra <strong>OK</strong>.</p>
+<section id="dia-2-tudo-o-que-você-compra-aba-ingredientes-40-min" class="dia">
+<h3>Dia 2 · Tudo o que você compra (aba <strong>Ingredientes</strong>) ·
+40 min</h3>
+</section>
+<p><strong>Por quê:</strong> o custo de uma receita é a soma de pequenos
+pedaços. Se o preço do pacote estiver errado, todo o resto erra
+junto.</p>
+<p><strong>Como fazer:</strong></p>
+<ol type="1">
+<li>Pegue as <strong>notas fiscais</strong> ou fotos das últimas
+compras. Não lembra o preço? Use o do aplicativo do mercado onde você
+compra.</li>
+<li>Uma linha por item: <strong>nome</strong>, <strong>unidade</strong>
+(g, ml ou un), <strong>tamanho do pacote</strong> e <strong>preço
+pago</strong>.</li>
+<li>Cadastre também <strong>embalagem, forminha, saco, etiqueta,
+guardanapo, sacola e talher descartável</strong>. É aí que mora o
+vazamento nº 1.</li>
+<li>Converta tudo para gramas, mililitros ou unidades: 1 kg = 1.000 g ·
+1 litro = 1.000 ml · bandeja de 30 ovos = 30 un.</li>
+</ol>
+<p><strong>Erros comuns:</strong></p>
+<ul>
+<li>Escrever “Farinha” numa aba e “Farinha de trigo” na outra. Os nomes
+precisam ser <strong>idênticos</strong>. Na aba Fichas, escolha pela
+<strong>setinha da lista</strong>.</li>
+<li>Cadastrar o preço da promoção que não volta mais. Use o preço que
+você <strong>costuma</strong> pagar.</li>
+</ul>
+<p><strong>Pronto quando:</strong> todos os itens das suas 3 receitas
+mais vendidas estão cadastrados, com custo por unidade calculado.</p>
+<section id="dia-3-a-ficha-técnica-de-cada-receita-aba-fichas-60-min-uma-vez-só" class="dia">
+<h3>Dia 3 · A ficha técnica de cada receita (aba
+<strong>Fichas</strong>) · 60 min (uma vez só)</h3>
+</section>
+<p><strong>Por quê:</strong> é o coração do método. “Uma pitada” e “um
+pouco de óleo” viram números, e números viram preço.</p>
+<p><strong>Como fazer:</strong></p>
+<ol type="1">
+<li>Escolha as <strong>3 receitas que mais vendem</strong>. As outras
+ficam para a semana seguinte.</li>
+<li>Na próxima vez que fizer cada uma, <strong>pese</strong> os
+ingredientes antes de usar. Uma balança de cozinha digital resolve; sem
+balança, use a tabela de medidas abaixo como
+<strong>aproximação</strong>.</li>
+<li>Anote quantas <strong>unidades a receita rendeu</strong> (conte as
+coxinhas, as marmitas, os brigadeiros).</li>
+<li>Anote os <strong>minutos de boca acesa</strong> e os <strong>minutos
+de trabalho</strong> do começo à limpeza, incluindo embalar.</li>
+<li>Digite tudo: uma linha por ingrediente, com o nome da receita
+<strong>igual</strong> em todas as linhas.</li>
+</ol>
+<p><strong>Marmita, combo e kit:</strong> monte como <strong>uma receita
+só</strong>. Ex.: “Marmita frango” = arroz + feijão + frango + salada,
+nas quantidades de uma panelada que rende 10 marmitas.</p>
+<p><strong>Óleo de fritura:</strong> se você troca o óleo a cada 2
+fornadas, ponha <strong>metade</strong> do óleo em cada receita. Se
+descarta a cada fornada, ponha o óleo inteiro.</p>
+<p><strong>Carne e frango:</strong> use o peso <strong>cru, como
+comprou</strong>. A carne perde peso ao cozinhar, mas você pagou pelo
+peso cru.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Medida caseira (aproximada, pese a sua)</th>
+<th>Equivale a</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 xícara (240 ml) de farinha de trigo</td>
+<td>~120 g</td>
+</tr>
+<tr class="even">
+<td>1 xícara de açúcar</td>
+<td>~180 g</td>
+</tr>
+<tr class="odd">
+<td>1 xícara de arroz cru</td>
+<td>~190 g</td>
+</tr>
+<tr class="even">
+<td>1 xícara de líquido (leite, água, óleo)</td>
+<td>240 ml</td>
+</tr>
+<tr class="odd">
+<td>1 colher (sopa) de óleo</td>
+<td>~15 ml</td>
+</tr>
+<tr class="even">
+<td>1 colher (sopa) de manteiga ou margarina</td>
+<td>~15 g</td>
+</tr>
+<tr class="odd">
+<td>1 dente de alho médio</td>
+<td>~5 g</td>
+</tr>
+<tr class="even">
+<td>1 cebola média</td>
+<td>~150 g</td>
+</tr>
+<tr class="odd">
+<td>1 ovo médio sem casca</td>
+<td>~50 g</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pronto quando:</strong> a aba <strong>Produtos</strong>
+mostra um “Custo dos ingredientes da receita” maior que zero para cada
+uma das suas 3 receitas, e nenhuma ficha tem a mensagem “ITEM NÃO
+CADASTRADO”.</p>
+</section>
+<div class="pagina">
+<section id="dia-4-o-preço-certo-aba-produtos-40-min" class="dia">
+<h3>Dia 4 · O preço certo (aba <strong>Produtos</strong>) · 40 min</h3>
+</section>
+<p><strong>Por quê:</strong> é aqui que aparecem os números que mudam a
+sua semana.</p>
+<p><strong>Como fazer:</strong></p>
+<ol type="1">
+<li>Para cada produto, preencha: <strong>rendimento</strong>,
+<strong>embalagem por unidade</strong>, <strong>minutos de boca
+acesa</strong> e <strong>minutos de trabalho</strong>. O nome tem de ser
+idêntico ao da ficha.</li>
+<li>Na coluna <strong>Seu preço atual</strong>, digite quanto você cobra
+hoje.</li>
+<li>Leia a coluna <strong>SITUAÇÃO</strong>:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situação</th>
+<th>O que significa</th>
+<th>O que fazer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>PREJUÍZO</strong> (vermelho)</td>
+<td>Cada venda paga menos que o seu custo, contando a sua hora.</td>
+<td>Ajuste agora (veja as 6 alavancas abaixo).</td>
+</tr>
+<tr class="even">
+<td><strong>Atenção</strong> (amarelo)</td>
+<td>Você se paga, mas o negócio não junta reserva.</td>
+<td>Ajuste no próximo cardápio.</td>
+</tr>
+<tr class="odd">
+<td><strong>OK</strong> (verde)</td>
+<td>Preço saudável.</td>
+<td>Mantenha e revise todo mês.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplo da Cozinha da Cláudia (fictício):</strong></p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Produto</th>
+<th>Custo total/un</th>
+<th>Mínimo</th>
+<th>Sugerido</th>
+<th>No app</th>
+<th>Ela cobra</th>
+<th>Situação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Marmita frango</td>
+<td>R$ 9,28</td>
+<td>R$ 10,10</td>
+<td>R$ 13,00</td>
+<td>R$ 20,50</td>
+<td>R$ 22,00</td>
+<td>OK</td>
+</tr>
+<tr class="even">
+<td>Coxinha (avulsa)</td>
+<td>R$ 2,67</td>
+<td>R$ 2,90</td>
+<td>R$ 4,00</td>
+<td>R$ 6,00</td>
+<td>R$ 4,00</td>
+<td>OK</td>
+</tr>
+<tr class="odd">
+<td>Brigadeiro gourmet</td>
+<td>R$ 1,68</td>
+<td>R$ 1,90</td>
+<td>R$ 2,50</td>
+<td>R$ 4,00</td>
+<td>R$ 2,50</td>
+<td>OK</td>
+</tr>
+</tbody>
+</table>
+<p>Repare: a coxinha a R$ 4 está <strong>OK</strong>, mas a mesma
+coxinha a <strong>R$ 1,60 no cento de festa</strong> fica muito abaixo
+do mínimo de R$ 2,90. O problema não era o produto, era o
+<strong>desconto</strong>.</p>
+<div class="dica">
+<p><strong>Por que o preço do app é tão maior?</strong> Porque a
+comissão do app (27% no exemplo) sai do preço. Se você vende no app pelo
+mesmo preço do WhatsApp, entrega quase um terço do valor. O certo é ter
+<strong>preço de app</strong> e <strong>preço de pedido direto</strong>,
+e convidar o cliente do app a pedir direto da próxima vez (mensagem 18),
+respeitando as regras do seu contrato com a plataforma.</p>
+</div>
+<h3 id="o-sugerido-ficou-acima-do-que-o-seu-bairro-paga-as-6-alavancas">O
+sugerido ficou acima do que o seu bairro paga? As 6 alavancas</h3>
+<p>Não baixe o preço por cima do custo. Mexa no custo e na oferta:</p>
+<ol type="1">
+<li><strong>Rendimento.</strong> Uma coxinha de 70 g e uma de 90 g
+custam diferente. Padronize o tamanho com uma colher medidora ou com a
+balança.</li>
+<li><strong>Compra.</strong> Os 3 itens mais caros da ficha respondem
+pela maior parte do custo. Compre esses no atacarejo ou em fardo e
+divida com outra vendedora.</li>
+<li><strong>Embalagem.</strong> Compare o pote de R$ 1,20 com o de R$
+0,80 de mesma qualidade, e compre embalagem por cento ou milheiro.</li>
+<li><strong>Tempo.</strong> Fazer 2 receitas de uma vez quase não
+aumenta o tempo de limpeza. Produza em lote, por encomenda (Dia 6).</li>
+<li><strong>Tamanho e versão.</strong> Ofereça “marmita P” e “marmita G”
+em vez de baixar o preço da única que existe.</li>
+<li><strong>Mix.</strong> Se um produto não fecha a conta em lugar
+nenhum, ele pode virar complemento de um combo (ex.: brigadeiro de
+sobremesa na marmita) ou sair do cardápio.</li>
+</ol>
+<h3 id="como-reajustar-sem-perder-cliente">Como reajustar sem perder
+cliente</h3>
+<ul>
+<li>Avise <strong>com 7 dias de antecedência</strong>, com data
+(mensagem 1).</li>
+<li>Reajuste <strong>uma vez</strong>, no valor certo, em vez de três
+reajustes pequenos.</li>
+<li>Mantenha o preço antigo <strong>por uma semana</strong> para quem já
+é cliente fiel (opcional).</li>
+<li><strong>Não peça desculpa</strong> nem explique a sua vida. Diga o
+que muda e a partir de quando.</li>
+</ul>
+<p><strong>Pronto quando:</strong> nenhum produto está em
+<strong>PREJUÍZO</strong> e você decidiu a data do reajuste dos que
+estão em <strong>Atenção</strong>.</p>
+<section id="dia-5-entrega-que-se-paga-aba-entrega-30-min" class="dia">
+<h3>Dia 5 · Entrega que se paga (aba <strong>Entrega</strong>) · 30
+min</h3>
+</section>
+<p><strong>Por quê:</strong> a entrega é o 3º maior desafio citado no
+levantamento do Sebrae-SP (29%). Entrega mal cobrada é prejuízo que nem
+aparece na conta da receita.</p>
+<p><strong>Como fazer:</strong></p>
+<ol type="1">
+<li>Liste os bairros para onde você entrega. No Google Maps, veja a
+distância de <strong>ida</strong> da sua casa até cada um.</li>
+<li>Estime os <strong>minutos de ida e volta</strong>, incluindo
+estacionar e entregar.</li>
+<li>Se paga motoboy, ponha o valor pago (a planilha usa esse valor no
+lugar do km).</li>
+<li>A planilha mostra o <strong>custo real</strong> e a <strong>taxa
+sugerida</strong>.</li>
+</ol>
+<p><strong>Regras que funcionam:</strong></p>
+<ul>
+<li><strong>Raio máximo.</strong> Fora dele, só com pedido mínimo (ex.:
+acima de R$ 80).</li>
+<li><strong>Dia de rota.</strong> “Terça e sexta entrego no Centro.”
+Juntar entregas no mesmo bairro divide o custo.</li>
+<li><strong>Retirada com vantagem.</strong> “Retirando aqui, ganha um
+brigadeiro.” Às vezes custa menos que a entrega.</li>
+<li><strong>Frete grátis só acima de um valor</strong> que cubra o custo
+(ex.: pedido acima de R$ 100 no mesmo bairro).</li>
+</ul>
+<p><strong>Pronto quando:</strong> cada bairro da sua lista tem uma
+taxa, e você definiu o raio e os dias de rota.</p>
+<section id="dia-6-venda-por-encomenda-com-sinal-abas-pedidos-e-semana-40-min" class="dia">
+<h3>Dia 6 · Venda por encomenda com sinal (abas <strong>Pedidos</strong>
+e <strong>Semana</strong>) · 40 min</h3>
+</section>
+<p><strong>Por quê:</strong> produzir só o que já foi vendido acaba com
+a sobra (vazamento nº 6), dá tempo de comprar no lugar certo e garante o
+dinheiro antes do trabalho.</p>
+<p><strong>O sistema da semana:</strong></p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quando</th>
+<th>O que acontece</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Domingo à noite</strong></td>
+<td>Envia o cardápio da semana nos Status e na lista de transmissão
+(mensagem 4).</td>
+</tr>
+<tr class="even">
+<td><strong>Até terça, 20h</strong></td>
+<td>Prazo para encomendar marmita de quarta a sexta.</td>
+</tr>
+<tr class="odd">
+<td><strong>Ao confirmar</strong></td>
+<td>Pede <strong>50% de sinal no Pix</strong> (mensagem 6). Encomenda só
+vale com sinal.</td>
+</tr>
+<tr class="even">
+<td><strong>Terça à noite</strong></td>
+<td>Aba <strong>Semana</strong>: digite quanto vai produzir. A aba
+<strong>Ingredientes</strong> mostra a lista de compras (coluna “Pacotes
+a comprar”).</td>
+</tr>
+<tr class="odd">
+<td><strong>Quarta a sexta</strong></td>
+<td>Produz, entrega, recebe o restante e marca <strong>Entregue</strong>
+na aba Pedidos.</td>
+</tr>
+<tr class="even">
+<td><strong>Sábado</strong></td>
+<td>30 minutos de rotina (Parte 4).</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cardápio enxuto:</strong> de <strong>3 a 5 itens</strong> por
+semana. Menos itens significa menos ingredientes diferentes, menos
+sobra, compra maior (e mais barata) e mais velocidade.</p>
+<p><strong>Política de encomenda (copie e cole no seu
+perfil):</strong></p>
+<blockquote>
+<p>Encomendas até terça, 20h. Confirmamos com 50% de sinal no Pix.
+Cancelamento até 48h antes: devolvemos o sinal. Com menos de 48h: o
+sinal cobre os ingredientes já comprados. Festas: pedido mínimo de 50
+unidades e 7 dias de antecedência.</p>
+</blockquote>
+<p><strong>Pronto quando:</strong> você mandou o primeiro cardápio da
+semana com prazo e regra de sinal, e registrou ao menos um pedido na aba
+Pedidos.</p>
+<section id="dia-7-o-painel-e-a-decisão-aba-painel-30-min" class="dia">
+<h3>Dia 7 · O painel e a decisão (aba <strong>Painel</strong>) · 30
+min</h3>
+</section>
+<p><strong>Por quê:</strong> é o dia em que você para de achar e passa a
+saber.</p>
+<p><strong>Como fazer:</strong></p>
+<ol type="1">
+<li>Na aba <strong>Painel</strong>, escolha o mês e o ano.</li>
+<li>Digite as <strong>horas que você trabalhou no negócio</strong> no
+mês: cozinhar, comprar, embalar, entregar e atender o WhatsApp. Se não
+mediu, estime por semana e multiplique por 4.</li>
+<li>Leia, de cima para baixo: faturamento → custos → <strong>dinheiro
+que sobrou para você</strong> → <strong>lucro do negócio</strong> →
+<strong>quanto você ganhou por hora</strong>.</li>
+<li>Veja a tabela <strong>Lucro por produto</strong> e decida:</li>
+</ol>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situação do produto</th>
+<th>Decisão</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Muito vendido e com lucro alto por unidade</td>
+<td><strong>Destaque</strong>: sempre no cardápio, foto boa, primeiro da
+lista.</td>
+</tr>
+<tr class="even">
+<td>Muito vendido e com lucro baixo</td>
+<td><strong>Ajuste</strong>: alavancas do Dia 4 ou reajuste.</td>
+</tr>
+<tr class="odd">
+<td>Pouco vendido e com lucro alto</td>
+<td><strong>Teste a divulgação</strong> por 2 semanas.</td>
+</tr>
+<tr class="even">
+<td>Pouco vendido e com lucro baixo ou negativo</td>
+<td><strong>Corte</strong> ou deixe só por encomenda.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplo (fictício), outubro da Cozinha da Cláudia:</strong>
+faturamento de R$ 2.295 em 11 pedidos. Depois de material, taxas,
+entregas e fixos, <strong>sobraram R$ 933,81</strong> para ela, e R$
+186,81 disso é lucro do negócio, além da hora paga. Em 52 horas, deu
+<strong>R$ 17,96 por hora</strong>, acima da meta de R$ 15. O painel
+também mostra que a <strong>coxinha deu prejuízo no mês</strong> (−R$
+121,55) por causa dos dois pedidos de festa com desconto. A decisão
+dela: tabela de festa com preço mínimo de R$ 2,90 a unidade (R$ 290 o
+cento) e a mensagem 9 para pedidos com desconto.</p>
+<div class="atencao">
+<p><strong>Separe o dinheiro.</strong> Abra uma conta digital gratuita
+só para o negócio (o Pix do cardápio cai nela). Uma vez por semana,
+transfira para a conta pessoal <strong>o seu “salário”</strong>: o valor
+da hora × as horas da semana. O que sobra é o caixa do negócio, que paga
+compras, gás e embalagem.</p>
+</div>
+<p><strong>Pronto quando:</strong> você sabe quanto ganhou por hora no
+mês e marcou uma decisão (destacar, ajustar, testar ou cortar) para cada
+produto.</p>
+</div>
+<section id="parte-3-as-24-mensagens-prontas-de-whatsapp" class="pagina">
+<h2>Parte 3 · As 24 mensagens prontas de WhatsApp</h2>
+<p>Troque o que está entre [colchetes]. Todas estão no arquivo
+<strong>Mensagens-WhatsApp.docx</strong> para copiar.</p>
+<h3 id="preço-e-reajuste">Preço e reajuste</h3>
+<p><strong>1. Aviso de reajuste (7 dias antes)</strong></p>
+<blockquote>
+<p>Oi, [nome]! Passando para avisar com antecedência: a partir de
+[data], a [marmita/produto] passa a custar R$ [novo preço]. Os
+ingredientes e o gás subiram, e prefiro ajustar o preço a diminuir a
+quantidade ou a qualidade. Até [data] continua o valor de hoje, se
+quiser garantir. Obrigada por estar sempre por aqui! 💛</p>
+</blockquote>
+<p><strong>2. Resposta a “subiu, é?”</strong></p>
+<blockquote>
+<p>Subiu, sim. Fiz as contas de tudo o que vai em cada [produto] e, no
+preço antigo, eu estava pagando para trabalhar. Mantive o mesmo tamanho
+e os mesmos ingredientes. Se preferir, tenho a versão [P/menor] por R$
+[valor].</p>
+</blockquote>
+<p><strong>3. Pedido de desconto (com alternativa)</strong></p>
+<blockquote>
+<p>Entendo! Nesse valor eu não consigo, porque cada unidade já sai no
+preço justo. O que eu consigo fazer: [retirando aqui, sem taxa de
+entrega] OU [a partir de X unidades, levo a entrega por minha conta] OU
+[a versão P por R$ valor]. Alguma dessas te ajuda?</p>
+</blockquote>
+<h3 id="cardápio-e-encomenda">Cardápio e encomenda</h3>
+<p><strong>4. Cardápio da semana (Status/lista de
+transmissão)</strong></p>
+<blockquote>
+<p>🍲 CARDÁPIO DA SEMANA – [dias]<br />
+1) [Produto] – R$ [valor]<br />
+2) [Produto] – R$ [valor]<br />
+3) [Produto] – R$ [valor]<br />
+📌 Encomendas até [dia, hora]<br />
+💳 Confirmação com 50% no Pix<br />
+🛵 Entrega: [bairros e taxas] · Retirada: [endereço/ponto]<br />
+Responda com o número e a quantidade 😉</p>
+</blockquote>
+<p><strong>5. Confirmação de pedido</strong></p>
+<blockquote>
+<p>Anotado, [nome]! ✅<br />
+[Qtd] x [produto] = R$ [valor]<br />
+Entrega [dia/horário] em [bairro] = R$ [taxa]<br />
+Total: R$ [total]<br />
+Para confirmar, o sinal é de R$ [50%] no Pix: [chave]. O restante, na
+entrega. Me manda o comprovante aqui, por favor.</p>
+</blockquote>
+<p><strong>6. Pedido sem sinal (lembrete gentil)</strong></p>
+<blockquote>
+<p>Oi, [nome]! Seu pedido de [dia] ainda não está confirmado. Fecho a
+lista de compras hoje às [hora] e só consigo garantir com o sinal de R$
+[valor]: [chave Pix]. Quer que eu mantenha?</p>
+</blockquote>
+<p><strong>7. Lista fechada</strong></p>
+<blockquote>
+<p>As encomendas desta semana fecharam! Obrigada a quem pediu 💛 O
+próximo cardápio sai [domingo]. Quer que eu te avise primeiro?</p>
+</blockquote>
+<p><strong>8. Orçamento para festa</strong></p>
+<blockquote>
+<p>Que bom que pensou em mim para a festa! 🎉 Para [nº] pessoas, sugiro
+[qtd] unidades ([quantas por pessoa]).<br />
+[Produto]: R$ [preço] o cento<br />
+Total: R$ [valor] + entrega R$ [taxa]<br />
+Pedido mínimo de [50] unidades, com [7] dias de antecedência e 50% de
+sinal para reservar a data. Fecho sua data?</p>
+</blockquote>
+<p><strong>9. Cliente pede preço de festa abaixo do mínimo</strong></p>
+<blockquote>
+<p>Entendo que é uma quantidade grande! Só que o trabalho de cada
+[salgado] é o mesmo, seja 1 ou 100, e com esse valor eu não cobriria os
+ingredientes e o tempo. O menor preço que consigo é R$ [mínimo] o cento.
+Uma ideia para caber no orçamento: [misturar com um item mais barato /
+diminuir para X unidades por pessoa].</p>
+</blockquote>
+<h3 id="entrega-e-pagamento">Entrega e pagamento</h3>
+<p><strong>10. Taxa de entrega por bairro</strong></p>
+<blockquote>
+<p>A entrega é calculada pela distância: [bairro A] R$ [x], [bairro B]
+R$ [y]. Retirada aqui é sem custo. Nas [terças], entrego no [bairro] com
+taxa de R$ [menor valor].</p>
+</blockquote>
+<p><strong>11. Fora do raio</strong></p>
+<blockquote>
+<p>Para o [bairro], só consigo entregar em pedidos acima de R$ [valor],
+ou você pode combinar a retirada em [ponto]. Fica bom?</p>
+</blockquote>
+<p><strong>12. Cobrança do restante (no dia)</strong></p>
+<blockquote>
+<p>Oi, [nome]! Seu pedido sai às [hora] 🛵. O restante é R$ [valor].
+Pode ser no Pix ([chave]) ou na entrega.</p>
+</blockquote>
+<p><strong>13. Pagamento atrasado (1º lembrete)</strong></p>
+<blockquote>
+<p>Oi, [nome], tudo bem? Passando para lembrar do restante do pedido de
+[data], R$ [valor]. Segue o Pix: [chave]. Qualquer coisa, me fala 😊</p>
+</blockquote>
+<p><strong>14. Pagamento atrasado (2º lembrete, firme e
+educado)</strong></p>
+<blockquote>
+<p>[Nome], o valor de R$ [valor] do pedido de [data] continua em aberto.
+Consegue acertar até [data]? Para os próximos pedidos, vou precisar do
+pagamento total antecipado.</p>
+</blockquote>
+<h3 id="relacionamento-e-retorno">Relacionamento e retorno</h3>
+<p><strong>15. Pós-venda (no dia seguinte)</strong></p>
+<blockquote>
+<p>Oi, [nome]! Deu tudo certo com o [produto]? Sua opinião me ajuda
+muito. Se gostou, posso te colocar na lista do cardápio da semana?</p>
+</blockquote>
+<p><strong>16. Pedido de foto ou comentário</strong></p>
+<blockquote>
+<p>Se puder, me manda uma foto do [produto] na mesa ou um áudio contando
+o que achou? Com a sua autorização, posso postar no meu Status. 💛</p>
+</blockquote>
+<p><strong>17. Cliente sumido (30 dias)</strong></p>
+<blockquote>
+<p>Oi, [nome]! Faz tempo que não te vejo por aqui 😊 Esta semana tem
+[produto que ele pedia]. Quer que eu separe um para você? As encomendas
+vão até [dia].</p>
+</blockquote>
+<p><strong>18. Cliente do app convidado a pedir direto</strong></p>
+<blockquote>
+<p>Obrigada pelo pedido! Se quiser, nas próximas vezes pode encomendar
+direto pelo meu WhatsApp, onde o preço é R$ [x] (no app é mais caro por
+causa das taxas). Confira antes as regras da plataforma em que você
+vende.</p>
+</blockquote>
+<p><strong>19. Indicação</strong></p>
+<blockquote>
+<p>Se você tem alguém no trabalho ou na família que gosta de [produto],
+pode me indicar? Quem indica ganha [1 brigadeiro / R$ X de desconto] no
+próximo pedido quando a pessoa fizer o primeiro.</p>
+</blockquote>
+<h3 id="situações-difíceis">Situações difíceis</h3>
+<p><strong>20. Erro seu (atraso, item errado)</strong></p>
+<blockquote>
+<p>[Nome], peço desculpas: [o que aconteceu]. Já [o que fez para
+corrigir]. No seu próximo pedido, [compensação concreta]. Obrigada pela
+paciência.</p>
+</blockquote>
+<p><strong>21. Reclamação de tamanho ou quantidade</strong></p>
+<blockquote>
+<p>Obrigada por me avisar. Cada [marmita] sai com [X g/porção padrão] e
+eu peso todas. Se veio diferente, quero corrigir: me manda uma foto? Se
+foi falha minha, eu reponho.</p>
+</blockquote>
+<p><strong>22. Cancelamento em cima da hora</strong></p>
+<blockquote>
+<p>Entendo, [nome]. Como os ingredientes já foram comprados, o sinal de
+R$ [valor] cobre esse custo, como combinado na confirmação. Se quiser,
+posso transformar o pedido em [outra data/produto que congela].</p>
+</blockquote>
+<p><strong>23. Pedido fora do cardápio</strong></p>
+<blockquote>
+<p>Esse eu não estou fazendo nesta semana 😕 Ele entra no cardápio de
+[data]. Quer que eu te avise? Hoje tenho [opção parecida].</p>
+</blockquote>
+<p><strong>24. Recusa educada (agenda cheia)</strong></p>
+<blockquote>
+<p>Que pena, para essa data a minha agenda fechou! Para garantir a
+qualidade, pego um número limitado de encomendas. Tenho vaga em [datas].
+Posso reservar uma?</p>
+</blockquote>
+</section>
+<div class="pagina">
+<h2 id="parte-4-a-rotina-de-30-minutos-todo-sábado">Parte 4 · A rotina
+de 30 minutos (todo sábado)</h2>
+<ul class="task-list">
+<li><label><input type="checkbox"></input>Todos os pedidos da semana estão na
+aba <strong>Pedidos</strong>, com status atualizado.</label></li>
+<li><label><input type="checkbox"></input>Algum preço de ingrediente mudou?
+Atualize-o na aba <strong>Ingredientes</strong> (os preços dos produtos
+se recalculam sozinhos).</label></li>
+<li><label><input type="checkbox"></input>Alguma linha em vermelho na aba
+<strong>Pedidos</strong> (lucro negativo)? Anote o motivo.</label></li>
+<li><label><input type="checkbox"></input>Algum produto ficou em
+<strong>PREJUÍZO</strong> ou <strong>Atenção</strong> depois da mudança
+de preço dos ingredientes?</label></li>
+<li><label><input type="checkbox"></input>Alguém está devendo? Coluna
+<strong>Falta receber</strong> + mensagens 13 e 14.</label></li>
+<li><label><input type="checkbox"></input>Transfira o seu “salário” da semana
+para a conta pessoal.</label></li>
+<li><label><input type="checkbox"></input>Monte o cardápio da próxima semana:
+3 a 5 itens, com o produto <strong>destaque</strong> em
+primeiro.</label></li>
+<li><label><input type="checkbox"></input>Mande a mensagem 17 para 3 clientes
+sumidos.</label></li>
+</ul>
+<p><strong>Todo dia 1º:</strong> revise as horas, os custos fixos e o
+faturamento esperado (aba Config) e leia o <strong>Painel</strong> do
+mês anterior.</p>
+<h2 id="parte-5-se-der-errado-olhe-aqui">Parte 5 · Se der errado, olhe
+aqui</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problema</th>
+<th>Causa provável</th>
+<th>Solução</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aparece <strong>“ITEM NÃO CADASTRADO”</strong> na ficha</td>
+<td>O nome do ingrediente está diferente do da aba Ingredientes</td>
+<td>Escolha o ingrediente pela setinha da lista</td>
+</tr>
+<tr class="even">
+<td>O custo da receita está <strong>R$ 0</strong> em Produtos</td>
+<td>O nome do produto está diferente do nome da receita</td>
+<td>Copie o nome exatamente igual (inclusive espaços)</td>
+</tr>
+<tr class="odd">
+<td>O custo ficou <strong>absurdo</strong> (ex.: R$ 500 numa
+marmita)</td>
+<td>A unidade está misturada (pôs 1 em vez de 1.000 g)</td>
+<td>Confira se o pacote e a quantidade usada estão na mesma unidade</td>
+</tr>
+<tr class="even">
+<td>O preço sugerido ficou muito alto</td>
+<td>Hora alta + receita lenta, ou fixos pesados</td>
+<td>Veja o “Peso dos fixos” (Config) e as alavancas do Dia 4</td>
+</tr>
+<tr class="odd">
+<td>“MARGEM ALTA DEMAIS” no preço do app</td>
+<td>Margem + comissão do app + fixos ≥ 100%</td>
+<td>Diminua a margem para o app ou não venda esse item lá</td>
+</tr>
+<tr class="even">
+<td>O total do pedido sai R$ 0</td>
+<td>Faltou a quantidade, ou o produto não tem “Seu preço atual”</td>
+<td>Preencha a quantidade e o preço</td>
+</tr>
+<tr class="odd">
+<td>O painel mostra <strong>0 pedidos</strong></td>
+<td>Data sem formato de data, ou mês/ano errado</td>
+<td>Digite a data como 15/10/2026 e confira o mês no painel</td>
+</tr>
+<tr class="even">
+<td>Uso no <strong>celular</strong></td>
+<td></td>
+<td>Abra no Google Planilhas: Arquivo › Importar, ou abra o .xlsx pelo
+Drive e “Salvar como Planilhas Google”. As fórmulas funcionam</td>
+</tr>
+<tr class="odd">
+<td>Não tenho computador nem paciência</td>
+<td></td>
+<td>Use as <strong>Fichas para imprimir</strong> e a conta à mão
+(abaixo). Depois, digite só as 3 receitas principais</td>
+</tr>
+</tbody>
+</table>
+<h3 id="a-conta-à-mão-versão-de-papel">A conta à mão (versão de
+papel)</h3>
+<ol type="1">
+<li><strong>Custo do material por unidade</strong> = (soma dos
+ingredientes da receita + gás) ÷ rendimento + embalagem.</li>
+<li><strong>Sua hora por unidade</strong> = (minutos de trabalho ÷ 60 ×
+valor da hora) ÷ rendimento.</li>
+<li><strong>Custo total</strong> = 1 + 2.</li>
+<li><strong>Preço mínimo</strong> = custo total ÷ 0,9 (separa uns 10%
+para taxas e fixos).</li>
+<li><strong>Preço sugerido</strong> = custo total ÷ 0,7 (com uma margem
+de uns 20%).</li>
+</ol>
+<p><em>Exemplo (marmita, fictício):</em> material de R$ 6,28 + hora de
+R$ 3,00 = R$ 9,28. Mínimo ≈ R$ 10,31 e sugerido ≈ R$ 13,26. A planilha,
+que usa os seus percentuais exatos, chega a R$ 10,10 e R$ 13,00.</p>
+<h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+<p><strong>Preciso ser MEI para usar?</strong> Não. O método funciona
+para quem é ou não é formalizado. Se você vende com frequência, vale
+conhecer o MEI no Portal do Empreendedor (gov.br) e as regras de venda
+de alimentos da <strong>vigilância sanitária da sua cidade</strong>, que
+mudam de município para município. O Sebrae oferece cursos gratuitos de
+boas práticas em alimentação; confira a disponibilidade.</p>
+<p><strong>E se o meu preço sugerido ficar acima do da
+concorrência?</strong> Primeiro use as 6 alavancas. Se mesmo assim ficar
+acima, você tem duas saídas honestas: entregar algo visivelmente melhor
+(tamanho padronizado, pontualidade, embalagem que não vaza, atendimento
+rápido) ou parar de vender aquele item. Vender abaixo do mínimo não é
+estratégia: é pagar para trabalhar.</p>
+<p><strong>Quanto vou ganhar?</strong> Este material não promete renda.
+Ele mostra <strong>com precisão quanto você ganha hoje</strong> e onde
+está o vazamento. O resultado depende do seu produto, da sua região e de
+quantas pessoas compram de você.</p>
+<p><strong>Funciona para bolo de pote, pão, caldo, torta ou salgado
+congelado?</strong> Sim. Qualquer coisa com receita, rendimento e
+embalagem cabe na mesma estrutura.</p>
+<p><strong>E se eu tiver mais de um tamanho do mesmo produto?</strong>
+Cadastre como produtos diferentes (“Marmita P” e “Marmita G”), cada um
+com a sua ficha.</p>
+<p><strong>Posso usar no Google Planilhas?</strong> Sim. Todas as
+fórmulas são compatíveis com Google Planilhas, Excel e LibreOffice.</p>
+<h2 id="glossário-rápido">Glossário rápido</h2>
+<ul>
+<li><strong>Ficha técnica:</strong> a receita com a quantidade exata de
+cada ingrediente e o rendimento.</li>
+<li><strong>Rendimento:</strong> quantas unidades uma receita
+produz.</li>
+<li><strong>Custo de material:</strong> ingrediente + embalagem + gás
+por unidade.</li>
+<li><strong>Custos fixos:</strong> o que você paga no mês vendendo muito
+ou pouco (aumento de luz, MEI, celular).</li>
+<li><strong>Margem:</strong> a porcentagem do preço que sobra para o
+negócio depois de pagar tudo.</li>
+<li><strong>Preço mínimo:</strong> o menor preço que paga tudo,
+inclusive a sua hora, sem lucro.</li>
+<li><strong>Ticket médio:</strong> quanto cada pedido vale, em
+média.</li>
+<li><strong>Sinal:</strong> o adiantamento que confirma a
+encomenda.</li>
+</ul>
+<div class="rodape-final">
+<p><strong>Panela no Lucro</strong> · Edição 1 · outubro de 2026. Os
+exemplos numéricos são de um negócio fictício, criados para demonstrar o
+método, e não representam resultados reais de clientes. Os preços de
+ingredientes são exemplos: use sempre os seus. Este material não
+substitui orientação contábil, jurídica ou sanitária.</p>
+</div>
+</div>
+</body>
+</html>
