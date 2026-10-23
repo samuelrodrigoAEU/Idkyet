@@ -1,0 +1,51 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+  body { background: #E9DFD3; }
+  .h2 { margin-top: 44px; font-size: 70px; }
+  .mesa { position: relative; flex: 1; margin-top: 30px; }
+  .folha { position: absolute; width: 440px; padding: 30px 32px; }
+  .folha .titulo { font-size: 24px; }
+  .folha .meta { font-size: 15px; }
+  .campo { font-size: 15px; margin-top: 14px; } .campo .l { height: 20px; }
+  .opcoes { font-size: 14px; gap: 14px; } .caixa { width: 15px; height: 15px; }
+  .f1 { left: 0; top: 40px; transform: rotate(-3deg); }
+  .f2 { left: 472px; top: 10px; transform: rotate(2.5deg); z-index: 2; }
+  .f3 { left: 30px; top: 430px; transform: rotate(2deg); z-index: 3; }
+  .tel { position: absolute; right: 20px; top: 370px; width: 300px; height: 480px; background: var(--tinta); border-radius: 44px; padding: 16px; z-index: 4; box-shadow: 0 24px 60px rgba(43,33,48,.3); }
+  .tela { background: var(--papel); border-radius: 32px; height: 100%; padding: 26px 20px; }
+  .tela .t { font-family: "Fraunces", serif; font-weight: 700; font-size: 22px; }
+  .tela .q { background: var(--branco); border-radius: 14px; padding: 14px; margin-top: 14px; font-size: 15px; line-height: 1.35; }
+  .tela .q .op { margin-top: 8px; color: var(--cinza); }
+  .rot { position: absolute; font-size: 19px; font-weight: 700; background: var(--tinta); color: var(--papel); padding: 8px 14px; border-radius: 999px; z-index: 5; }
+  .linha3 { display:flex; gap:10px; align-items:center; font-size:15px; margin-top:12px; }
+  body.s11 .h2 { margin-top: 24px; font-size: 56px; }
+  body.s11 .mesa { transform: scale(.78); transform-origin: top center; }
+  body.s11 .rodape { display: none; }
+</style></head><body><div class="frame">
+  <div class="marca"><span class="selo">✓</span>Cliente Ciente</div>
+  <div class="h2">O que você recebe, <em class="i">do jeito que é.</em></div>
+  <div class="mesa">
+    <div class="folha f1"><div class="titulo">Ficha de anamnese</div><div class="meta">Design de sobrancelhas com henna</div>
+      <div class="campo"><span class="dot r"></span> Já teve reação a henna ou tintura?<div class="opcoes"><span><span class="caixa"></span>Não</span><span><span class="caixa"></span>Sim</span></div></div>
+      <div class="campo"><span class="dot a"></span> Fez algum procedimento na área nos últimos 30 dias?<div class="opcoes"><span><span class="caixa"></span>Não</span><span><span class="caixa"></span>Sim</span></div></div>
+      <div class="campo">Observações<div class="l"></div></div></div>
+    <div class="folha f2"><div class="titulo">Política de agenda</div><div class="meta">Modelo editável para enviar à cliente</div>
+      <div class="campo"><b>Sinal:</b> valor abatido do serviço.</div>
+      <div class="campo"><b>Remarcação:</b> avise com antecedência e o sinal vale para a nova data.</div>
+      <div class="campo"><b>Atraso:</b> tolerância definida por você.</div>
+      <div class="campo"><b>Falta sem aviso:</b> regra escrita e combinada antes.</div></div>
+    <div class="folha f3"><div class="titulo">Autorização de uso de imagem</div><div class="meta">Fotos de resultado para redes sociais</div>
+      <div class="linha3"><span class="caixa"></span>Autorizo com rosto</div>
+      <div class="linha3"><span class="caixa"></span>Autorizo sem mostrar o rosto</div>
+      <div class="linha3"><span class="caixa"></span>Não autorizo</div>
+      <div class="campo">Assinatura<div class="l"></div></div></div>
+    <div class="tel"><div class="tela"><div class="t">Ficha · Extensão de cílios</div>
+      <div class="q">Usa lentes de contato?<div class="op">○ Não &nbsp; ○ Sim</div></div>
+      <div class="q">Já teve reação a cola de cílios?<div class="op">○ Não &nbsp; ○ Sim</div></div>
+      <div class="q">Li e entendi os cuidados.<div class="op">☐ Estou ciente</div></div>
+      <div class="q" style="background:var(--terracota);color:#fff;text-align:center;font-weight:700;font-size:17px">Enviar</div></div></div>
+    <span class="rot" style="left:20px; top:6px">Word, Google Docs e PDF</span>
+    <span class="rot" style="right:60px; top:340px">Formulário digital</span>
+  </div>
+  <div class="rodape"><span class="sub" style="font-size:28px">6 fichas · 6 termos · política de agenda · 25 mensagens</span></div>
+</div></body></html>

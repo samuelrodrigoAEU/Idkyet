@@ -1,0 +1,76 @@
+/* Identidade visual Cliente Ciente — base comum dos 10 criativos */
+@font-face { font-family: "Fraunces"; font-weight: 400; src: url(../fonts/fraunces-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 600; src: url(../fonts/fraunces-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 700; src: url(../fonts/fraunces-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 800; src: url(../fonts/fraunces-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 400; font-style: italic; src: url(../fonts/fraunces-latin-400-italic.woff2) format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 600; font-style: italic; src: url(../fonts/fraunces-latin-600-italic.woff2) format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 400; src: url(../fonts/dm-sans-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 500; src: url(../fonts/dm-sans-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; src: url(../fonts/dm-sans-latin-700-normal.woff2) format("woff2"); }
+
+:root {
+  --tinta: #2B2130;      /* ameixa escuro: texto e fundos fortes */
+  --papel: #F6F0E8;      /* creme: fundo principal */
+  --rosa: #F1D9D0;       /* rosa argila claro: superfícies */
+  --terracota: #B9533F;  /* destaque e CTA */
+  --verde: #4F7D5C;      /* semáforo: atende */
+  --ambar: #D99A2B;      /* semáforo: pergunta mais / adia */
+  --vermelho: #B83A32;   /* semáforo: não atende hoje */
+  --cinza: #6E6470;      /* texto secundário */
+  --linha: #D9CFC4;      /* linhas de formulário */
+  --branco: #FFFFFF;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: var(--h, 1350px); overflow: hidden; }
+body {
+  font-family: "DM Sans", sans-serif;
+  color: var(--tinta);
+  background: var(--papel);
+  -webkit-font-smoothing: antialiased;
+}
+.frame {
+  position: relative;
+  width: 1080px;
+  height: var(--h, 1350px);
+  padding: 84px 84px 72px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.serif { font-family: "Fraunces", serif; }
+.h1 { font-family: "Fraunces", serif; font-weight: 700; font-size: 96px; line-height: 0.98; letter-spacing: -2px; }
+.h2 { font-family: "Fraunces", serif; font-weight: 600; font-size: 64px; line-height: 1.04; letter-spacing: -1px; }
+.sub { font-size: 34px; line-height: 1.32; color: var(--cinza); }
+.kicker { font-size: 24px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: var(--terracota); }
+em.i { font-style: italic; font-weight: 600; }
+
+/* Marca */
+.marca { display: flex; align-items: center; gap: 14px; font-family: "Fraunces", serif; font-weight: 700; font-size: 34px; letter-spacing: -0.5px; }
+.selo { width: 44px; height: 44px; border-radius: 50%; border: 3px solid currentColor; display: grid; place-items: center; font-family: "DM Sans"; font-size: 24px; font-weight: 700; }
+.rodape { margin-top: auto; display: flex; align-items: center; justify-content: space-between; }
+
+/* CTA */
+.cta { display: inline-flex; align-items: center; gap: 16px; background: var(--terracota); color: var(--branco); font-weight: 700; font-size: 32px; padding: 24px 40px; border-radius: 999px; }
+.cta.escuro { background: var(--tinta); }
+.cta .seta { font-size: 34px; }
+
+/* Folha de papel (representação dos documentos reais do kit) */
+.folha { background: var(--branco); border-radius: 10px; box-shadow: 0 2px 0 rgba(43,33,48,.06), 0 24px 60px rgba(43,33,48,.16); padding: 40px 44px; }
+.folha .titulo { font-family: "Fraunces", serif; font-weight: 700; font-size: 30px; }
+.folha .meta { font-size: 17px; color: var(--cinza); margin-top: 4px; }
+.campo { margin-top: 22px; font-size: 19px; color: var(--tinta); }
+.campo .l { border-bottom: 2px solid var(--linha); height: 30px; margin-top: 6px; }
+.opcoes { display: flex; gap: 22px; margin-top: 8px; font-size: 18px; color: var(--cinza); }
+.caixa { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--tinta); border-radius: 4px; vertical-align: -3px; margin-right: 8px; }
+.caixa.x { background: var(--tinta); box-shadow: inset 0 0 0 3px var(--branco); }
+.dot { display: inline-block; width: 18px; height: 18px; border-radius: 50%; vertical-align: -2px; }
+.dot.v { background: var(--verde); } .dot.a { background: var(--ambar); } .dot.r { background: var(--vermelho); }
+
+/* Ajustes por formato: s11 = 1080x1080, s916 = 1080x1920 */
+body.s11 .so45, body.s11 .so916 { display: none !important; }
+body.s45 .so11, body.s45 .so916 { display: none !important; }
+body.s916 .so11 { display: none !important; }
+body.s916 .frame { padding: 280px 84px 400px; } /* zonas seguras de Stories/Reels */
+body.s11 .frame { padding: 64px 72px 56px; }

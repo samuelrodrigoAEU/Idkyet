@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cliente Ciente</title>
+<meta name="description" content="Fichas, termos e regras de agenda prontos para quem atende sobrancelha, cílios e unhas.">
+<!--
+  Antes de publicar:
+  1. Trocar todos os href="#checkout" pelo link do checkout.
+  2. Preencher os nomes e registros dos revisores (procure por "REVISOR").
+  3. Trocar as prévias desenhadas por capturas das páginas reais do kit.
+  4. Colar o código do pixel da Meta no fim do <head>.
+-->
+<style>
+@font-face { font-family: "Fraunces"; font-weight: 700; font-display: swap; src: url(../criativos/fonts/fraunces-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Fraunces"; font-weight: 600; font-style: italic; font-display: swap; src: url(../criativos/fonts/fraunces-latin-600-italic.woff2) format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 400; font-display: swap; src: url(../criativos/fonts/dm-sans-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; font-display: swap; src: url(../criativos/fonts/dm-sans-latin-700-normal.woff2) format("woff2"); }
+:root {
+  --tinta: #2B2130; --papel: #F6F0E8; --rosa: #F1D9D0; --terracota: #B9533F;
+  --verde: #4F7D5C; --ambar: #D99A2B; --vermelho: #B83A32; --cinza: #6E6470; --linha: #D9CFC4; --branco: #FFFFFF;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "DM Sans", system-ui, sans-serif; color: var(--tinta); background: var(--papel); font-size: 18px; line-height: 1.55; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+section { padding: 56px 0; }
+h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 700; line-height: 1.08; letter-spacing: -0.5px; }
+h1 { font-size: clamp(38px, 8vw, 60px); }
+h2 { font-size: clamp(30px, 6vw, 42px); margin-bottom: 18px; }
+h3 { font-size: 22px; margin-bottom: 6px; }
+em { font-style: italic; font-weight: 600; color: var(--terracota); }
+p + p { margin-top: 14px; }
+.muted { color: var(--cinza); }
+.small { font-size: 15px; }
+.marca { display: flex; align-items: center; gap: 10px; font-family: "Fraunces", serif; font-weight: 700; font-size: 22px; padding: 18px 0; }
+.selo { width: 30px; height: 30px; border: 2px solid currentColor; border-radius: 50%; display: grid; place-items: center; font-size: 16px; }
+.btn { display: inline-block; background: var(--terracota); color: var(--branco); font-weight: 700; font-size: 20px; text-decoration: none; padding: 18px 30px; border-radius: 999px; margin-top: 26px; }
+.btn:hover { filter: brightness(1.08); }
+.selos { margin-top: 14px; font-size: 15px; color: var(--cinza); }
+.hero { padding-top: 24px; }
+.hero .sub { font-size: 20px; margin-top: 18px; color: var(--cinza); }
+.escuro { background: var(--tinta); color: var(--papel); }
+.escuro .muted { color: #CFC3CC; }
+.rosa { background: var(--rosa); }
+.cards { display: grid; gap: 14px; margin-top: 10px; }
+.card { background: var(--branco); border-radius: 16px; padding: 20px 22px; }
+.escuro .card { background: #3A2E3F; }
+.luz { display: inline-block; width: 16px; height: 16px; border-radius: 50%; margin-right: 8px; vertical-align: -1px; }
+.v { background: var(--verde); } .a { background: var(--ambar); } .r { background: var(--vermelho); }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+td { padding: 12px 0; border-bottom: 1px solid var(--linha); vertical-align: top; }
+td.n { font-family: "Fraunces", serif; font-weight: 700; font-size: 26px; color: var(--terracota); width: 56px; }
+.previa { display: grid; gap: 16px; margin-top: 24px; }
+@media (min-width: 640px) { .previa { grid-template-columns: 1fr 1fr; } }
+.folha { background: var(--branco); border-radius: 8px; padding: 20px; box-shadow: 0 10px 30px rgba(43,33,48,.12); font-size: 14px; }
+.folha b.t { font-family: "Fraunces", serif; font-size: 18px; display: block; }
+.folha .q { margin-top: 10px; }
+.folha .l { border-bottom: 1px solid var(--linha); height: 18px; }
+ol { padding-left: 22px; } ol li + li { margin-top: 8px; }
+details { background: var(--branco); border-radius: 12px; padding: 16px 20px; }
+details + details { margin-top: 10px; }
+summary { font-weight: 700; cursor: pointer; }
+details p { margin-top: 10px; color: var(--cinza); }
+.preco { font-family: "Fraunces", serif; font-weight: 700; font-size: 64px; line-height: 1; }
+footer { padding: 32px 0 48px; font-size: 14px; color: var(--cinza); }
+</style>
+</head>
+<body>
+
+<header class="wrap"><div class="marca"><span class="selo">✓</span>Cliente Ciente</div></header>
+
+<section class="hero"><div class="wrap">
+  <h1>Tudo combinado <em>antes</em> de a cliente sentar na cadeira.</h1>
+  <p class="sub">Fichas, termos e regras de agenda prontos para quem atende sobrancelha, cílios e unhas, com um semáforo que mostra quando seguir, quando perguntar mais e quando não atender.</p>
+  <a class="btn" href="#checkout">Quero o kit por R$ 27</a>
+  <p class="selos">Word, Google Docs e PDF · acesso imediato · 7 dias para pedir reembolso</p>
+</div></section>
+
+<section class="escuro"><div class="wrap">
+  <h2>O problema não aparece no dia a dia. Aparece no dia ruim.</h2>
+  <div class="cards">
+    <div class="card"><h3>A alergia em branco</h3><p class="muted">Uma profissional foi condenada a indenizar depois que uma cliente teve reação a um peeling. Na ficha, o campo de alergias estava vazio. <a style="color:inherit" href="https://www.correiobraziliense.com.br/cidades-df/2021/06/amp/4934733-justica-determina-indenizacao-a-vitima-de-negligencia-em-procedimento-estetico.html">Fonte</a></p></div>
+    <div class="card"><h3>A foto sem autorização</h3><p class="muted">Um salão foi condenado por usar a foto de uma modelo sem autorização escrita. <a style="color:inherit" href="https://www.rotajuridica.com.br/salao-de-beleza-e-estudio-fotografico-sao-condenados-por-uso-indevido-de-imagem-de-modelo/">Fonte</a></p></div>
+    <div class="card"><h3>A falta das 13h52</h3><p class="muted">"Não vou conseguir ir hoje." O horário era às 14h e o material já estava separado.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>O que falta não é mais um modelo de ficha. É saber o que fazer com as respostas.</h2>
+  <p>Ficha bonita tem de graça. Mas ela pergunta e para por aí: não diz o que fazer quando a cliente marca "sim", não vem com o termo do procedimento, não fala de foto nem de sinal e não chega no celular da cliente antes de ela sair de casa.</p>
+  <p>No Cliente Ciente, cada pergunta importante já vem marcada com uma cor:</p>
+  <div class="cards" style="margin-top:18px">
+    <div class="card"><h3><span class="luz v"></span>Verde: segue</h3><p class="muted">Nenhuma resposta de alerta. Atendimento normal.</p></div>
+    <div class="card"><h3><span class="luz a"></span>Amarelo: pergunta mais</h3><p class="muted">Por exemplo, um procedimento recente na mesma área. Você conversa antes e decide se adia.</p></div>
+    <div class="card"><h3><span class="luz r"></span>Vermelho: hoje não</h3><p class="muted">Por exemplo, a cliente já teve reação ao produto. Você não aplica e orienta procurar um médico.</p></div>
+  </div>
+  <p class="small muted" style="margin-top:16px">As perguntas críticas só aceitam "sim" ou "não". Os critérios seguem as instruções dos fabricantes e foram revisados por REVISOR TÉCNICO (nome e registro).</p>
+</div></section>
+
+<section class="rosa"><div class="wrap">
+  <h2>O que vem no kit</h2>
+  <table>
+    <tr><td class="n">6</td><td><b>Fichas de anamnese</b><br><span class="muted">Sobrancelhas com henna ou tintura, brow lamination, extensão de cílios, lash lifting, alongamento de unhas e esmaltação em gel</span></td></tr>
+    <tr><td class="n">6</td><td><b>Termos de ciência</b><br><span class="muted">O que será feito, riscos possíveis e cuidados depois do procedimento</span></td></tr>
+    <tr><td class="n">6</td><td><b>Formulários pelo celular</b><br><span class="muted">A cliente responde antes de chegar</span></td></tr>
+    <tr><td class="n">25</td><td><b>Mensagens de WhatsApp</b><br><span class="muted">Confirmar, lembrar, pedir o sinal, remarcar, mandar os cuidados, recusar com educação</span></td></tr>
+    <tr><td class="n">1</td><td><b>Política de agenda</b><br><span class="muted">Sinal abatido do valor, prazo para remarcar, tolerância de atraso e regra para falta</span></td></tr>
+    <tr><td class="n">1</td><td><b>Autorização de uso de imagem</b><br><span class="muted">Com rosto, sem mostrar o rosto ou não autorizo</span></td></tr>
+    <tr><td class="n">1</td><td><b>Ficha de registro do atendimento</b><br><span class="muted">Produto, lote, tempo de pausa e observações</span></td></tr>
+    <tr><td class="n">1</td><td><b>Guia rápido</b><br><span class="muted">Como usar o semáforo e guardar as fichas com cuidado</span></td></tr>
+  </table>
+  <div class="previa">
+    <div class="folha"><b class="t">Ficha de anamnese</b><span class="muted">Design de sobrancelhas com henna</span>
+      <div class="q"><span class="luz r"></span>Já teve reação a henna ou tintura? ☐ Não ☐ Sim</div>
+      <div class="q"><span class="luz a"></span>Fez procedimento na área nos últimos 30 dias? ☐ Não ☐ Sim</div>
+      <div class="q">Observações<div class="l"></div></div></div>
+    <div class="folha"><b class="t">Política de agenda</b><span class="muted">Modelo editável</span>
+      <div class="q"><b>Sinal:</b> valor abatido do serviço.</div>
+      <div class="q"><b>Remarcação:</b> avise com antecedência e o sinal vale para a nova data.</div>
+      <div class="q"><b>Falta sem aviso:</b> regra escrita e combinada antes.</div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Como fica no dia a dia</h2>
+  <ol>
+    <li>Coloque seu nome e sua logo nos documentos, uma vez só.</li>
+    <li>Ao confirmar o horário, mande a mensagem pronta com o link da ficha.</li>
+    <li>Quando a cliente chegar, confira as cores das respostas.</li>
+    <li>Peça a assinatura do termo do procedimento.</li>
+    <li>Depois do atendimento, mande a mensagem com os cuidados.</li>
+  </ol>
+</div></section>
+
+<section class="escuro"><div class="wrap">
+  <h2>Para quem é</h2>
+  <p>Profissionais autônomas e estúdios pequenos que atendem sobrancelha, cílios e unhas.</p>
+  <h2 style="margin-top:32px">Para quem não é</h2>
+  <p class="muted">Quem faz procedimentos invasivos, micropigmentação ou peeling, e clínicas que já têm documentação feita por advogado próprio.</p>
+</div></section>
+
+<section id="comprar"><div class="wrap" style="text-align:center">
+  <p class="muted">Pagamento único</p>
+  <div class="preco">R$ 27</div>
+  <p class="muted small" style="margin-top:12px">Uma ficha avulsa em gerador on-line custa R$ 29,90. Um kit grande de documentos de estética custa R$ 109,90. O Cliente Ciente é focado nos procedimentos de sobrancelha, cílios e unhas.</p>
+  <a class="btn" href="#checkout">Quero o Cliente Ciente</a>
+  <p class="selos">7 dias para pedir reembolso integral pela plataforma, sem precisar explicar o motivo.</p>
+</div></section>
+
+<section class="rosa"><div class="wrap">
+  <h2>Perguntas frequentes</h2>
+  <details><summary>Tem ficha de graça no Canva. Por que pagar?</summary><p>A ficha grátis traz as perguntas. O kit traz o que fazer com cada resposta, o termo de cada procedimento, a autorização de imagem, as regras de agenda, as mensagens e os formulários de celular.</p></details>
+  <details><summary>Minha cliente não vai achar burocrático?</summary><p>Ela responde pelo celular, junto com a confirmação do horário. Na cadeira, você só confere.</p></details>
+  <details><summary>Isso me protege de processo?</summary><p>Não prometemos isso. Nenhum documento isenta alguém de responsabilidade. O kit registra o que foi perguntado, explicado e combinado, e ajuda você a recusar quando a ficha indica. Para o seu caso, consulte um advogado.</p></details>
+  <details><summary>Cobrar sinal não vai espantar cliente?</summary><p>A política sugere um sinal abatido do valor do serviço, que vale para a nova data quando a cliente avisa com antecedência. As mensagens explicam isso com gentileza.</p></details>
+  <details><summary>Não tenho tempo para mexer em documento.</summary><p>Você troca nome e logo uma vez. O resto já está escrito.</p></details>
+  <details><summary>Faço outros procedimentos. Serve para mim?</summary><p>O kit cobre seis procedimentos de sobrancelha, cílios e unhas. Se o seu trabalho é outro, ele não é para você.</p></details>
+  <details><summary>Quem escreveu o conteúdo?</summary><p>Os critérios técnicos foram revisados por REVISOR TÉCNICO (nome e registro) e os termos por REVISOR JURÍDICO (nome e OAB).</p></details>
+  <details><summary>Não sei usar Google Forms.</summary><p>É só clicar em "fazer uma cópia". O guia mostra o passo a passo com imagens.</p></details>
+  <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias para pedir o reembolso integral pela plataforma, sem justificar.</p></details>
+  <details><summary>Como recebo?</summary><p>O acesso chega no seu e-mail logo depois da confirmação do pagamento, com os arquivos em Word, Google Docs e PDF.</p></details>
+</div></section>
+
+<section><div class="wrap" style="text-align:center">
+  <h2>Comece pelo próximo atendimento.</h2>
+  <a class="btn" href="#checkout">Quero o Cliente Ciente por R$ 27</a>
+</div></section>
+
+<footer class="wrap">
+  <p>Os modelos do Cliente Ciente não substituem orientação jurídica nem a avaliação de um profissional de saúde. Adapte-os ao seu estúdio e às instruções do fabricante de cada produto. Assinar um termo não isenta a profissional de responsabilidade.</p>
+</footer>
+
+</body>
+</html>
