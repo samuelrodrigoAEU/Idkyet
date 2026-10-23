@@ -5,7 +5,9 @@ import { chromium } from "playwright";
 import { mkdirSync, writeFileSync, rmSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { carrosseis } from "./dados.mjs";
+import { carrosseis as base } from "./dados.mjs";
+import { divulgacao } from "./dados-divulgacao.mjs";
+const carrosseis = [...base, ...divulgacao];
 
 const aqui = dirname(fileURLToPath(import.meta.url));
 const raiz = resolve(aqui, "..");
@@ -25,6 +27,8 @@ const blocos = {
   chat: (s) => `${s.titulo ? `<div class="titulo">${s.titulo}</div>` : ""}<div class="chat">${s.msgs.map((m) => `<div class="bolha ${m.de}">${m.q ? `<span class="q">${m.q}</span>` : ""}${m.t}</div>`).join("")}</div>${s.apoio ? `<div class="apoio">${s.apoio}</div>` : ""}${s.nota ? `<div class="nota">${s.nota}</div>` : ""}`,
   formula: (s) => `<div class="titulo">${s.titulo}</div><div class="formula">${s.formula}</div>${s.apoio ? `<div class="apoio">${s.apoio}</div>` : ""}`,
   tabela: (s) => `<div class="titulo">${s.titulo}</div><table class="tabela">${s.linhas.map(([a, b], i) => `<tr class="${s.total && i === s.linhas.length - 1 ? "tot" : ""}"><td>${a}</td><td>${b}</td></tr>`).join("")}</table>${s.nota ? `<div class="nota">${s.nota}</div>` : ""}`,
+  imagem: (s) => `${s.kicker ? `<div class="kicker">${s.kicker}</div>` : ""}${s.titulo ? `<div class="titulo">${s.titulo}</div>` : ""}<div class="paginas ${s.imgs.length > 1 ? "duas" : ""}">${s.imgs.map((n) => `<img src="${pathToFileURL(join(aqui, "assets", n)).href}">`).join("")}</div>${s.apoio ? `<div class="apoio">${s.apoio}</div>` : ""}`,
+  grade: (s) => `<div class="titulo">${s.titulo}</div><div class="grade"><table><tr>${s.cols.map((c) => `<th>${c}</th>`).join("")}</tr>${s.linhas.map((l) => `<tr>${l.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("")}</table></div>${s.nota ? `<div class="nota">${s.nota}</div>` : ""}`,
   trilha: (s) => `<div class="titulo">${s.titulo}</div><div class="trilha">${"PASSO".split("").map((l, i) => `<span class="${s.ativo?.includes(i) ? "on" : ""}">${l}</span>`).join("")}</div>${s.corpo ? `<div class="corpo">${s.corpo}</div>` : ""}`,
 };
 
@@ -48,7 +52,9 @@ const textoDoSlide = (s) => {
   if (s.ruim) p.push(`${s.ruim[0]}: ${semTags(s.ruim[1])}`, `${s.bom[0]}: ${semTags(s.bom[1])}`);
   if (s.msgs) s.msgs.forEach((m) => p.push(`${m.de === "ela" ? "Mensagem recebida" : "Resposta"}: “${semTags(m.t)}”`));
   if (s.formula) p.push(`Fórmula: ${semTags(s.formula)}`);
-  if (s.linhas) s.linhas.forEach(([a, b]) => p.push(`${semTags(a)}: ${semTags(b)}`));
+  if (s.imgs) p.push(`Imagem: página real do material (${s.imgs.join(", ")})`);
+  if (s.cols) p.push(`Planilha: ${s.cols.join(" | ")}`, ...s.linhas.map((l) => l.join(" | ")));
+  if (s.linhas && !s.cols) s.linhas.forEach(([a, b]) => p.push(`${semTags(a)}: ${semTags(b)}`));
   if (s.apoio) p.push(semTags(s.apoio));
   if (s.nota) p.push(`Nota: ${semTags(s.nota)}`);
   return p.join("<br>");
@@ -62,13 +68,15 @@ const composicao = {
   chat: "Bolhas de conversa simplificadas, sem logotipo de aplicativo; mensagem recebida à esquerda, resposta à direita",
   formula: "Bloco escuro com a fórmula em fonte mono; explicação abaixo",
   tabela: "Tabela de duas colunas com valores alinhados à direita em fonte mono; total em laranja",
+  imagem: "Página real do material, exportada do PDF, com sombra suave; quando há duas, a segunda sobreposta e levemente girada",
+  grade: "Reprodução fiel de uma aba da planilha: cabeçalho escuro, células em grade, valores em fonte mono",
   trilha: "Cinco círculos com as letras P-A-S-S-O, os ativos preenchidos em laranja",
 };
 
 const filtro = process.argv.slice(2);
 const browser = await chromium.launch({ executablePath: "/opt/pw-browsers/chromium-1194/chrome-linux/chrome" });
 const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
-let md = `# Roteiros dos 12 carrosséis\n\nGerado por \`fonte/render.mjs\` a partir de \`fonte/dados.mjs\`. As imagens estão em \`png/\`, uma pasta por carrossel.\nFormato: 1080 × 1920 px (9:16). Nenhum carrossel mostra preço, ganho, depoimento ou prova social.\n\n`;
+let md = `# Roteiros dos carrosséis\n\nGerado por \`fonte/render.mjs\` a partir de \`fonte/dados.mjs\` (C01 a C12, conteúdo) e \`fonte/dados-divulgacao.mjs\` (C13 a C23, divulgação do produto). As imagens estão em \`png/\`, uma pasta por carrossel.\nFormato: 1080 × 1920 px (9:16). Nenhum carrossel mostra preço, ganho, depoimento ou prova social.\n\n`;
 md += `## Direção de arte comum\n\n- **Tipografia:** Bricolage Grotesque 800 nos ganchos e títulos (76 a 112 px); Inter 400 e 700 no texto (36 a 42 px); IBM Plex Mono nos rótulos e no contador (24 a 28 px).\n- **Cores:** tinta \`#161A22\`, papel \`#F5F2EB\`, laranja-sinal \`#E8552A\`, areia \`#ECE6DA\`, azul \`#2D4FD6\` (bolhas de resposta \`#DDE5FF\`).\n- **Espaçamento:** margem esquerda de 96 px; 150 px livres à direita (ícones do TikTok); 170 px no topo; 400 px na base (legenda e botões). Todo texto fica dentro dessa área.\n- **Elementos:** contador “01 / 07” e nome da série no topo; nome do produto e seta no rodapé. Nenhum ícone decorativo, foto de banco ou imagem gerada.\n- **Ritmo:** capa escura, miolo claro, slide de virada em laranja ou escuro, fechamento com chamada.\n\n`;
 for (const c of carrosseis.filter((c) => !filtro.length || filtro.includes(c.id))) {
   const pasta = join(raiz, "png", `${c.id}-${c.slug}`);

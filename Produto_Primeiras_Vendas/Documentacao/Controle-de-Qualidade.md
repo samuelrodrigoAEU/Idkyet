@@ -33,7 +33,8 @@ Revisão feita em 23/10/2026 sobre os arquivos gerados. Itens corrigidos durante
 |---|---|
 | Promessas de renda, prazo ou venda garantida | Nenhuma; a ausência de garantia é dita no guia, na página, nos carrosséis C11 e C12 e no checkout |
 | Depoimentos, prints ou números de alunos | Nenhum |
-| Preço nos carrosséis | Nenhum preço do produto ou dos bumps (os valores que aparecem são de exemplos fictícios de outros negócios) |
+| Preço nos carrosséis | Nenhum preço do produto ou dos bumps nos 23 carrosséis (os valores que aparecem são de exemplos fictícios de outros negócios) |
+| Carrosséis de divulgação (C13 a C23) | Mostram só páginas e capas reais exportadas dos PDFs; tabelas de planilha usam os dados fictícios do arquivo de exemplo, identificados; cada um ensina algo aplicável sem compra |
 | Urgência ou escassez | Nenhuma |
 | Fontes citadas | Na pesquisa e no funil, com links; dados não confirmados oficialmente estão marcados como hipótese |
 | Direitos de uso | Fontes com licença OFL; nenhuma imagem de terceiros ou gerada por IA |

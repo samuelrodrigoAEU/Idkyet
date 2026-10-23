@@ -46,6 +46,28 @@ Funil pensado para uma página de TikTok que ainda está construindo audiência,
 
 Entre os carrosséis, quando possível, vídeos curtos sem aparecer (gravação de tela da planilha, texto na tela sobre um dos temas) reaproveitando o conteúdo dos carrosséis.
 
+### Carrosséis de divulgação (C13 a C23)
+
+Onze carrosséis focados no guia e nos complementos. Cada um ainda ensina algo útil para quem não compra, e cada um pede uma **palavra-chave diferente** nos comentários. Todas levam ao mesmo link; a palavra serve para saber qual tema gerou interesse.
+
+| Carrossel | Tema | Palavra-chave |
+|---|---|---|
+| C13 | O "pronto quando" de cada tarefa | GUIA |
+| C14 | Matriz de ideias na planilha | MATRIZ |
+| C15 | As 9 perguntas da oferta | OFERTA |
+| C16 | Os 5 círculos de potenciais clientes | LISTA |
+| C17 | Kit de Conversas que Vendem | CONVERSA |
+| C18 | Fábrica de Conteúdo Orgânico | PAUTA |
+| C19 | Painel das Primeiras Vendas | PAINEL |
+| C20 | Tudo o que vem no pacote | GUIA |
+| C21 | Para quem o guia não é | GUIA |
+| C22 | 5 perguntas antes de comprar | GUIA |
+| C23 | Páginas reais do guia | GUIA |
+
+**Quando publicar:** depois das 4 semanas de conteúdo (C01 a C12), alterne 1 carrossel de divulgação para cada 2 de conteúdo, para que o perfil não vire uma vitrine. Sugestão de ordem: C23, C15, C17, C14, C16, C20, C18, C22, C19, C21, C13. Se o perfil já tiver público, comece direto por C23, C20 e C22.
+
+**Regra de proporção:** no máximo 1 em cada 3 publicações deve apresentar o produto.
+
 ## 4. Conteúdos fixados (até 3)
 
 1. **C11 Plano de 7 dias:** é o conteúdo mais útil sozinho e já faz a ponte para o guia.
@@ -60,7 +82,7 @@ Revise os fixados quando tiver dados: troque o que gera menos comentários com i
 |---|---|---|
 | Descoberta | "Salve para usar depois" · "Manda para quem está começando" | Carrosséis de erro e mito |
 | Consideração | "Comenta sua oferta / seu número / a objeção que mais escuta" | Tutoriais e conversas |
-| Decisão | "Comenta PASSO" ou "Comenta GUIA que eu te mando o link" · "Link na bio" (se houver) | C11, C12 e respostas a perguntas sobre o guia |
+| Decisão | "Comenta PASSO", "GUIA" ou a palavra-chave do carrossel de divulgação · "Link na bio" (se houver) | C11 a C23 e respostas a perguntas sobre o guia |
 
 Use **uma** chamada por publicação.
 

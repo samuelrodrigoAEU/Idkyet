@@ -25,6 +25,8 @@
 - [ ] Legenda e comentário fixado copiados de `Roteiros-dos-Carrosseis.md`.
 - [ ] Responder os comentários das primeiras horas.
 - [ ] Anotar comentários com pergunta, mensagens recebidas e palavras-chave (plano de testes, seção 10 do funil).
+- [ ] Nos carrosséis de divulgação, contar quantas vezes cada palavra-chave apareceu (MATRIZ, OFERTA, LISTA, CONVERSA, PAUTA, PAINEL, GUIA).
+- [ ] Se editar o guia, refazer as imagens das páginas usadas nos carrosséis (`Carrosseis_TikTok/fonte/assets/`) e renderizar de novo.
 
 ## Integridade (revisar sempre que editar)
 - [ ] Nenhum preço do produto nos carrosséis.

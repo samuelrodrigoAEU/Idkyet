@@ -6,7 +6,8 @@
 - [x] Planilha de ferramentas do guia
 - [x] Bump 1 (Kit de Conversas), Bump 2 (Fábrica de Conteúdo), Bump 3 (Painel + manual + exemplo)
 - [x] Identidade visual documentada
-- [x] 12 carrosséis (82 PNG) e roteiros
+- [x] 12 carrosséis de conteúdo e 11 de divulgação (160 PNG) e roteiros
+- [x] Pacotes ZIP para download e página de vendas em arquivo único
 - [x] Funil, preço, plano de testes, página de vendas, textos do checkout
 - [x] Revisão e controle de qualidade
 

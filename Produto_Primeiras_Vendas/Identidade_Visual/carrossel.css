@@ -88,3 +88,18 @@ body { font-family: "Inter PV", sans-serif; -webkit-font-smoothing: antialiased;
 .deslize { display: inline-flex; align-items: center; gap: 16px; margin-top: 64px; font-family: "Plex Mono", monospace; font-size: 28px; letter-spacing: .08em; text-transform: uppercase; }
 .deslize i { display: inline-block; width: 90px; height: 4px; background: currentColor; position: relative; }
 .deslize i::after { content: ""; position: absolute; right: 0; top: -9px; width: 20px; height: 20px; border-top: 4px solid currentColor; border-right: 4px solid currentColor; transform: rotate(45deg); }
+
+/* Página real do material */
+.paginas { position: relative; margin-top: 48px; height: 860px; }
+.paginas img { position: absolute; left: 0; top: 0; height: 860px; border-radius: 10px; box-shadow: 0 30px 60px rgba(0,0,0,.25), 0 2px 0 rgba(0,0,0,.08); }
+.paginas.duas img:first-child { transform: rotate(-3deg); left: 0; }
+.paginas.duas img:last-child { transform: rotate(4deg); left: 230px; top: 40px; }
+.bg-tinta .paginas img { box-shadow: 0 30px 60px rgba(0,0,0,.55); }
+
+/* Grade de planilha */
+.grade { margin-top: 44px; border-radius: 14px; overflow: hidden; border: 2px solid #C9C2B4; background: #fff; }
+.grade table { width: 100%; border-collapse: collapse; font-size: 27px; color: var(--tinta); }
+.grade th { background: var(--tinta); color: var(--papel); font-weight: 600; text-align: left; padding: 16px 14px; font-size: 23px; }
+.grade td { padding: 15px 14px; border-top: 1px solid #E2DCD0; border-left: 1px solid #E2DCD0; font-family: "Plex Mono", monospace; font-size: 25px; }
+.grade td:first-child { border-left: 0; font-family: "Inter PV", sans-serif; font-weight: 600; }
+.grade tr:nth-child(even) td { background: #FAF8F3; }
