@@ -1,0 +1,90 @@
+/* Sistema de composição dos carrosséis 1080 × 1920
+   Zona segura: topo 170 px, base 400 px (legenda e botões do TikTok), direita 150 px (ícones de ação). */
+@font-face { font-family: "Bricolage"; font-weight: 600; src: url(fontes/bricolage-grotesque-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Bricolage"; font-weight: 700; src: url(fontes/bricolage-grotesque-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Bricolage"; font-weight: 800; src: url(fontes/bricolage-grotesque-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 400; src: url(fontes/inter-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 600; src: url(fontes/inter-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 700; src: url(fontes/inter-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Plex Mono"; font-weight: 400; src: url(fontes/ibm-plex-mono-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Plex Mono"; font-weight: 600; src: url(fontes/ibm-plex-mono-latin-600-normal.woff2) format("woff2"); }
+
+:root { --tinta: #161A22; --papel: #F5F2EB; --sinal: #E8552A; --azul: #2D4FD6; --verde: #2E7D5B; --areia: #ECE6DA; --cinza: #5E6370; --linha: #D8D1C2; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; }
+body { font-family: "Inter PV", sans-serif; -webkit-font-smoothing: antialiased; }
+
+.slide { position: relative; width: 1080px; height: 1920px; padding: 170px 150px 400px 96px; display: flex; flex-direction: column; overflow: hidden; }
+.bg-papel { background: var(--papel); color: var(--tinta); }
+.bg-tinta { background: var(--tinta); color: var(--papel); }
+.bg-sinal { background: var(--sinal); color: var(--tinta); }
+.bg-areia { background: var(--areia); color: var(--tinta); }
+
+/* Faixa superior: série e contador */
+.topo { display: flex; justify-content: space-between; align-items: center; font-family: "Plex Mono", monospace; font-size: 26px; letter-spacing: .08em; text-transform: uppercase; }
+.topo .serie { color: var(--sinal); font-weight: 600; }
+.bg-sinal .topo .serie { color: var(--tinta); }
+.topo .cont { opacity: .6; }
+.miolo { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.rodape { display: flex; justify-content: space-between; align-items: center; font-family: "Plex Mono", monospace; font-size: 24px; opacity: .7; }
+
+/* Tipografia */
+.gancho { font-family: "Bricolage", sans-serif; font-weight: 800; font-size: 112px; line-height: .98; letter-spacing: -0.025em; }
+.gancho em, .titulo em { font-style: normal; color: var(--sinal); }
+.bg-sinal .gancho em, .bg-sinal .titulo em { color: var(--papel); }
+.titulo { font-family: "Bricolage", sans-serif; font-weight: 800; font-size: 76px; line-height: 1.02; letter-spacing: -0.02em; }
+.corpo { font-size: 42px; line-height: 1.32; margin-top: 40px; }
+.corpo b { font-weight: 700; }
+.apoio { font-size: 36px; line-height: 1.35; margin-top: 36px; opacity: .78; }
+.kicker { font-family: "Plex Mono", monospace; font-size: 28px; letter-spacing: .1em; text-transform: uppercase; color: var(--sinal); margin-bottom: 32px; }
+.bg-sinal .kicker { color: var(--tinta); }
+.nota { font-family: "Plex Mono", monospace; font-size: 24px; opacity: .65; margin-top: 40px; }
+
+/* Número grande */
+.numero { font-family: "Bricolage", sans-serif; font-weight: 800; font-size: 260px; line-height: .8; color: var(--sinal); margin-bottom: 40px; }
+.bg-sinal .numero { color: var(--papel); }
+
+/* Lista */
+.lista { list-style: none; margin-top: 48px; display: flex; flex-direction: column; gap: 30px; }
+.lista li { display: grid; grid-template-columns: 72px 1fr; font-size: 40px; line-height: 1.28; }
+.lista li .m { font-family: "Plex Mono", monospace; font-weight: 600; font-size: 32px; color: var(--sinal); padding-top: 6px; }
+.lista.check li .m { width: 46px; height: 46px; border: 4px solid currentColor; border-radius: 8px; color: inherit; }
+
+/* Comparação */
+.comparar { display: flex; flex-direction: column; gap: 28px; margin-top: 48px; }
+.caixa { border-radius: 24px; padding: 34px 36px; font-size: 38px; line-height: 1.3; }
+.caixa .r { display: block; font-family: "Plex Mono", monospace; font-size: 24px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 14px; font-weight: 600; }
+.caixa.ruim { background: rgba(22,26,34,.06); border: 3px dashed rgba(22,26,34,.35); }
+.bg-tinta .caixa.ruim { background: rgba(245,242,235,.06); border-color: rgba(245,242,235,.35); }
+.caixa.ruim .r { color: var(--cinza); }
+.bg-tinta .caixa.ruim .r { color: #A9A69E; }
+.caixa.bom { background: var(--tinta); color: var(--papel); }
+.caixa.bom .r { color: var(--sinal); }
+.bg-tinta .caixa.bom { background: var(--papel); color: var(--tinta); }
+
+/* Conversa */
+.chat { margin-top: 48px; display: flex; flex-direction: column; gap: 22px; }
+.bolha { max-width: 760px; border-radius: 34px; padding: 30px 34px; font-size: 38px; line-height: 1.32; }
+.bolha.ela { background: #FFFFFF; color: var(--tinta); border-top-left-radius: 8px; box-shadow: 0 2px 0 rgba(0,0,0,.05); }
+.bolha.voce { align-self: flex-end; background: #DDE5FF; color: var(--tinta); border-top-right-radius: 8px; }
+.bg-tinta .bolha.ela { background: #262B36; color: var(--papel); }
+.bolha .q { display: block; font-family: "Plex Mono", monospace; font-size: 22px; opacity: .55; margin-bottom: 8px; text-transform: uppercase; letter-spacing: .08em; }
+
+/* Fórmula ou destaque */
+.formula { margin-top: 48px; background: var(--tinta); color: var(--papel); border-radius: 24px; padding: 40px; font-family: "Plex Mono", monospace; font-size: 38px; line-height: 1.4; }
+.bg-tinta .formula { background: var(--papel); color: var(--tinta); }
+.formula b { color: var(--sinal); font-weight: 600; }
+.tabela { margin-top: 44px; width: 100%; border-collapse: collapse; font-size: 34px; }
+.tabela td { padding: 18px 0; border-bottom: 2px solid rgba(22,26,34,.15); }
+.tabela td:last-child { text-align: right; font-family: "Plex Mono", monospace; font-weight: 600; }
+.tabela tr.tot td { border-bottom: 0; font-weight: 700; color: var(--sinal); }
+
+/* Trilha PASSO */
+.trilha { display: flex; gap: 18px; margin-top: 56px; }
+.trilha span { width: 128px; height: 128px; border-radius: 50%; border: 5px solid currentColor; display: grid; place-items: center; font-family: "Bricolage", sans-serif; font-weight: 800; font-size: 60px; }
+.trilha span.on { background: var(--sinal); border-color: var(--sinal); color: var(--tinta); }
+
+/* Seta de "deslize" na capa */
+.deslize { display: inline-flex; align-items: center; gap: 16px; margin-top: 64px; font-family: "Plex Mono", monospace; font-size: 28px; letter-spacing: .08em; text-transform: uppercase; }
+.deslize i { display: inline-block; width: 90px; height: 4px; background: currentColor; position: relative; }
+.deslize i::after { content: ""; position: absolute; right: 0; top: -9px; width: 20px; height: 20px; border-top: 4px solid currentColor; border-right: 4px solid currentColor; transform: rotate(45deg); }

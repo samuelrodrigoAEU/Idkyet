@@ -1,0 +1,115 @@
+/* Primeiras Vendas na Prática — estilo dos documentos (PDF A5 e leitura em tela) */
+@font-face { font-family: "Bricolage"; font-weight: 500; src: url(fontes/bricolage-grotesque-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: "Bricolage"; font-weight: 600; src: url(fontes/bricolage-grotesque-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Bricolage"; font-weight: 700; src: url(fontes/bricolage-grotesque-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Bricolage"; font-weight: 800; src: url(fontes/bricolage-grotesque-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 400; src: url(fontes/inter-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 400; font-style: italic; src: url(fontes/inter-latin-400-italic.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 500; src: url(fontes/inter-latin-500-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 600; src: url(fontes/inter-latin-600-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 700; src: url(fontes/inter-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Plex Mono"; font-weight: 400; src: url(fontes/ibm-plex-mono-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Plex Mono"; font-weight: 600; src: url(fontes/ibm-plex-mono-latin-600-normal.woff2) format("woff2"); }
+
+:root {
+  --tinta: #161A22;   /* texto e fundos escuros */
+  --papel: #F5F2EB;   /* fundo de capa e tela */
+  --sinal: #E8552A;   /* laranja de destaque: ação, erro, ênfase */
+  --azul: #2D4FD6;    /* exercícios e links */
+  --verde: #2E7D5B;   /* critério de pronto */
+  --areia: #ECE6DA;   /* caixas de exemplo */
+  --cinza: #5E6370;   /* texto secundário */
+  --linha: #D8D1C2;   /* bordas e fios */
+  --branco: #FFFFFF;
+}
+
+@page { size: 148mm 210mm; margin: 15mm 13mm 17mm 13mm; }
+* { box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+body { margin: 0; font-family: "Inter PV", Inter, sans-serif; font-size: 9.4pt; line-height: 1.52; color: var(--tinta); background: var(--branco); hyphens: auto; }
+@media screen { body { max-width: 680px; margin: 0 auto; padding: 24px 18px 80px; font-size: 16px; background: var(--papel); } }
+
+h1, h2, h3, h4 { font-family: "Bricolage", sans-serif; line-height: 1.12; letter-spacing: -0.01em; color: var(--tinta); hyphens: none; break-after: avoid; }
+h1 { font-size: 22pt; font-weight: 800; margin: 0 0 4mm; break-before: page; }
+h2 { font-size: 13.5pt; font-weight: 700; margin: 7mm 0 2mm; }
+h3 { font-size: 10.8pt; font-weight: 700; margin: 5mm 0 1.5mm; }
+h4 { font-family: "Plex Mono", monospace; font-size: 7.6pt; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--sinal); margin: 4mm 0 1mm; }
+p { margin: 0 0 2.4mm; orphans: 3; widows: 3; }
+a { color: var(--azul); text-decoration: none; }
+strong { font-weight: 700; }
+ul, ol { margin: 0 0 2.6mm; padding-left: 5mm; }
+li { margin-bottom: 1mm; }
+li > p { margin: 0; }
+hr { border: 0; border-top: 1px solid var(--linha); margin: 5mm 0; }
+code { font-family: "Plex Mono", monospace; font-size: .9em; background: var(--areia); padding: 0 1mm; border-radius: 1mm; }
+blockquote { margin: 3mm 0; padding: 0 0 0 4mm; border-left: 2px solid var(--sinal); font-family: "Bricolage", sans-serif; font-size: 11pt; font-weight: 600; line-height: 1.3; }
+
+/* Abertura de módulo */
+.modulo { break-before: page; margin-bottom: 5mm; }
+.modulo + h1 { break-before: avoid; }
+.modulo .num { font-family: "Plex Mono", monospace; font-size: 8pt; letter-spacing: .1em; color: var(--sinal); text-transform: uppercase; }
+.modulo .trilha { display: flex; gap: 1.2mm; margin-top: 3mm; }
+.modulo .trilha span { flex: 1; text-align: center; font-family: "Plex Mono", monospace; font-size: 7pt; padding: 1mm 0; border: 1px solid var(--linha); border-radius: 1mm; color: var(--cinza); }
+.modulo .trilha span.on { background: var(--tinta); color: var(--papel); border-color: var(--tinta); }
+.resumo { font-size: 10.2pt; color: var(--cinza); margin-bottom: 4mm; }
+
+/* Caixas didáticas */
+.passos, .exemplo, .modelo, .erro, .exercicio, .pronto, .nota { position: relative; margin: 3.5mm 0; padding: 3.2mm 3.6mm 1.2mm; border-radius: 2mm; break-inside: avoid; }
+.exemplo, .modelo { break-inside: auto; }
+.modelo p { margin-bottom: 2.6mm; }
+.passos::before, .exemplo::before, .modelo::before, .erro::before, .exercicio::before, .pronto::before, .nota::before {
+  display: block; font-family: "Plex Mono", monospace; font-size: 7pt; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; margin-bottom: 1.6mm;
+}
+.passos { background: var(--papel); }
+.passos::before { content: "Passo a passo"; color: var(--tinta); }
+.exemplo { background: var(--areia); }
+.exemplo::before { content: "Exemplo · simulação"; color: var(--cinza); }
+.exemplo.real::before { content: "Exemplo"; }
+.modelo { background: var(--branco); border: 1.2px dashed var(--tinta); }
+.modelo::before { content: "Modelo para copiar e adaptar"; color: var(--tinta); }
+.erro { border-left: 3px solid var(--sinal); background: #FBEDE7; border-radius: 0 2mm 2mm 0; }
+.erro::before { content: "Erro comum"; color: var(--sinal); }
+.exercicio { border-left: 3px solid var(--azul); background: #ECEFFC; border-radius: 0 2mm 2mm 0; }
+.exercicio::before { content: "Exercício"; color: var(--azul); }
+.pronto { border-left: 3px solid var(--verde); background: #E7F2EC; border-radius: 0 2mm 2mm 0; }
+.pronto::before { content: "Pronto quando"; color: var(--verde); }
+.nota { background: var(--papel); border: 1px solid var(--linha); }
+.nota::before { content: "Importante"; color: var(--cinza); }
+.passos ol { padding-left: 5mm; }
+
+/* Tabelas */
+table { width: 100%; border-collapse: collapse; margin: 3mm 0 4mm; font-size: 8pt; line-height: 1.35; break-inside: auto; }
+thead { display: table-header-group; }
+tr { break-inside: avoid; }
+th { background: var(--tinta); color: var(--papel); font-weight: 600; text-align: left; padding: 1.6mm 1.8mm; font-size: 7.6pt; }
+td { padding: 1.5mm 1.8mm; border-bottom: 1px solid var(--linha); vertical-align: top; }
+tbody tr:nth-child(even) td { background: #FAF8F3; }
+.preencher td { height: 7mm; }
+
+/* Caixas de marcar */
+.check ul { list-style: none; padding-left: 0; }
+.check li { padding-left: 6mm; position: relative; }
+.check li::before { content: ""; position: absolute; left: 0; top: .5mm; width: 3mm; height: 3mm; border: 1.2px solid var(--tinta); border-radius: .6mm; }
+
+/* Capa */
+.capa { break-after: page; height: 178mm; display: flex; flex-direction: column; background: var(--tinta); color: var(--papel); margin: 0; padding: 12mm 10mm; border-radius: 3mm; }
+.capa .selo { font-family: "Plex Mono", monospace; font-size: 7.6pt; letter-spacing: .12em; text-transform: uppercase; color: var(--sinal); }
+.capa .titulo { font-family: "Bricolage", sans-serif; font-weight: 800; font-size: 30pt; line-height: 1; letter-spacing: -0.02em; margin-top: 16mm; }
+.capa .titulo em { font-style: normal; color: var(--sinal); }
+.capa .sub { font-size: 10.5pt; line-height: 1.45; margin-top: 6mm; color: #D9D4C9; max-width: 105mm; }
+.capa .marca { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; font-family: "Plex Mono", monospace; font-size: 7.4pt; color: #A9A69E; }
+.capa .passo-viz { display: flex; gap: 1.6mm; margin-top: 10mm; }
+.capa .passo-viz span { width: 13mm; height: 13mm; border: 1.4px solid var(--papel); border-radius: 50%; display: grid; place-items: center; font-family: "Bricolage", sans-serif; font-weight: 800; font-size: 13pt; }
+.capa .passo-viz span:first-child { background: var(--sinal); border-color: var(--sinal); color: var(--tinta); }
+.capa.bump { background: var(--papel); color: var(--tinta); border: 1.4px solid var(--tinta); }
+.capa.bump .sub { color: var(--cinza); }
+.capa.bump .marca { color: var(--cinza); }
+
+/* Sumário e mapa */
+.mapa { display: grid; grid-template-columns: 11mm 1fr; gap: 2mm 3mm; margin: 4mm 0; align-items: start; }
+.mapa .l { font-family: "Bricolage", sans-serif; font-weight: 800; font-size: 18pt; line-height: 1; color: var(--sinal); }
+.mapa .t { font-size: 9pt; }
+.mapa .t b { display: block; font-family: "Bricolage", sans-serif; font-size: 10.5pt; }
+.comece { background: var(--tinta); color: var(--papel); padding: 4mm; border-radius: 2mm; margin: 4mm 0; break-inside: avoid; }
+.comece b { color: var(--sinal); }
+.pequeno { font-size: 7.8pt; color: var(--cinza); }

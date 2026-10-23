@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primeiras Vendas na Prática</title>
+<meta name="description" content="Guia com o Método PASSO para escolher o que vender, preparar uma oferta clara, encontrar quem tem interesse e conduzir a conversa até o pagamento.">
+<!--
+  Antes de publicar:
+  1. Troque todos os href="#checkout" pelo link do checkout.
+  2. Troque PRECO pelo preço escolhido (hipótese inicial: R$ 27).
+  3. Se for hospedar, copie a pasta Identidade_Visual/fontes junto ou ajuste o caminho das fontes.
+-->
+<style>
+@font-face { font-family: "Bricolage"; font-weight: 800; font-display: swap; src: url(../Identidade_Visual/fontes/bricolage-grotesque-latin-800-normal.woff2) format("woff2"); }
+@font-face { font-family: "Bricolage"; font-weight: 700; font-display: swap; src: url(../Identidade_Visual/fontes/bricolage-grotesque-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 400; font-display: swap; src: url(../Identidade_Visual/fontes/inter-latin-400-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter PV"; font-weight: 700; font-display: swap; src: url(../Identidade_Visual/fontes/inter-latin-700-normal.woff2) format("woff2"); }
+@font-face { font-family: "Plex Mono"; font-weight: 600; font-display: swap; src: url(../Identidade_Visual/fontes/ibm-plex-mono-latin-600-normal.woff2) format("woff2"); }
+:root { --tinta: #161A22; --papel: #F5F2EB; --sinal: #E8552A; --azul: #2D4FD6; --areia: #ECE6DA; --cinza: #5E6370; --linha: #D8D1C2; --branco: #FFFFFF; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Inter PV", system-ui, sans-serif; font-size: 18px; line-height: 1.6; color: var(--tinta); background: var(--papel); }
+.w { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+section { padding: 60px 0; }
+h1, h2, h3 { font-family: "Bricolage", system-ui, sans-serif; line-height: 1.08; letter-spacing: -0.015em; }
+h1 { font-size: clamp(40px, 9vw, 64px); font-weight: 800; }
+h2 { font-size: clamp(28px, 6vw, 40px); font-weight: 800; margin-bottom: 18px; }
+h3 { font-size: 21px; font-weight: 700; margin-bottom: 4px; }
+em { font-style: normal; color: var(--sinal); }
+p + p { margin-top: 14px; }
+.rot { font-family: "Plex Mono", monospace; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--sinal); margin-bottom: 14px; }
+.sub { font-size: 20px; color: #D9D4C9; margin-top: 20px; }
+.escuro { background: var(--tinta); color: var(--papel); }
+.areia { background: var(--areia); }
+.btn { display: inline-block; margin-top: 28px; background: var(--sinal); color: var(--tinta); font-weight: 700; font-size: 19px; text-decoration: none; padding: 18px 30px; border-radius: 10px; }
+.btn:hover { filter: brightness(1.06); }
+.mini { font-size: 15px; color: var(--cinza); margin-top: 12px; }
+.escuro .mini { color: #A9A69E; }
+.cards { display: grid; gap: 12px; margin-top: 8px; }
+.card { background: var(--branco); border: 1px solid var(--linha); border-radius: 12px; padding: 18px 20px; }
+.escuro .card { background: #222733; border-color: #2E3443; }
+.passo { display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: start; padding: 16px 0; border-bottom: 1px solid var(--linha); }
+.passo b.l { font-family: "Bricolage", sans-serif; font-weight: 800; font-size: 40px; line-height: 1; color: var(--sinal); }
+ul.lista { list-style: none; margin-top: 8px; }
+ul.lista li { padding: 10px 0 10px 28px; border-bottom: 1px solid var(--linha); position: relative; }
+ul.lista li::before { content: ""; position: absolute; left: 2px; top: 19px; width: 12px; height: 12px; border-radius: 3px; background: var(--sinal); }
+ul.nao li::before { background: transparent; border: 2px solid var(--cinza); }
+.duas { display: grid; gap: 24px; }
+@media (min-width: 680px) { .duas { grid-template-columns: 1fr 1fr; } }
+.preco { font-family: "Bricolage", sans-serif; font-weight: 800; font-size: 64px; line-height: 1; }
+details { background: var(--branco); border: 1px solid var(--linha); border-radius: 12px; padding: 16px 20px; }
+details + details { margin-top: 10px; }
+summary { font-weight: 700; cursor: pointer; }
+details p { margin-top: 10px; color: var(--cinza); }
+footer { padding: 36px 0 56px; font-size: 14px; color: var(--cinza); }
+</style>
+</head>
+<body>
+
+<section class="escuro"><div class="w">
+  <div class="rot">Guia prático · Método PASSO</div>
+  <h1>Primeiras Vendas <em>na Prática</em></h1>
+  <p class="sub">Como escolher o que vender, preparar uma oferta clara, encontrar quem tem interesse e conduzir a conversa até o pagamento, mesmo começando sem experiência, sem audiência e sem dinheiro para anúncios.</p>
+  <a class="btn" href="#checkout">Quero o guia</a>
+  <p class="mini">PDF, Word e planilha (Excel e Google Planilhas) · acesso imediato · 7 dias de garantia</p>
+</div></section>
+
+<section><div class="w">
+  <h2>Se isto parece familiar</h2>
+  <div class="cards">
+    <div class="card">Você quer vender alguma coisa pela internet, mas cada ideia parece boa por dois dias e depois parece errada.</div>
+    <div class="card">Já mandou mensagens oferecendo algo e quase ninguém respondeu.</div>
+    <div class="card">Posta conteúdo, até tem visualizações, mas ninguém pergunta como comprar.</div>
+    <div class="card">Quando alguém pergunta o preço, você responde e a pessoa some.</div>
+  </div>
+</div></section>
+
+<section class="areia"><div class="w">
+  <h2>O que muda quando você entende a ordem das coisas</h2>
+  <p>A primeira venda raramente vem de um vídeo que viralizou. Costuma vir de uma oferta clara, apresentada para alguém que já tem o problema, numa conversa bem conduzida até o pagamento.</p>
+  <p>O guia organiza exatamente isso, em cinco etapas, com exemplos para serviços, produtos físicos, produtos digitais e revenda. Você não precisa de site, de logo nem de milhares de seguidores para começar.</p>
+</div></section>
+
+<section><div class="w">
+  <h2>O Método PASSO</h2>
+  <div class="passo"><b class="l">P</b><div><h3>Problema que alguém paga para resolver</h3>Compare 3 ideias com 5 critérios e escolha a que vale testar, sem comprar estoque.</div></div>
+  <div class="passo"><b class="l">A</b><div><h3>Arrumar a oferta</h3>Defina quem compra, o que recebe, quanto custa (com taxas) e por que confiar, sem inventar autoridade.</div></div>
+  <div class="passo"><b class="l">S</b><div><h3>Sinais de interesse</h3>Encontre pessoas que já têm o problema e puxe conversa sem spam; crie conteúdo que traz perguntas, não só visualizações.</div></div>
+  <div class="passo"><b class="l">S</b><div><h3>Seguir a conversa até o pagamento</h3>Perguntas de diagnóstico, apresentação da solução, objeções, pagamento seguro e entrega.</div></div>
+  <div class="passo"><b class="l">O</b><div><h3>Observar e ajustar</h3>Registre contatos e propostas, descubra em que etapa as pessoas param e mude uma coisa por semana.</div></div>
+</div></section>
+
+<section class="escuro"><div class="w">
+  <h2>O que vem dentro</h2>
+  <ul class="lista">
+    <li>7 módulos com explicação, passo a passo, exemplos, modelos, erros comuns, exercícios e critério de "pronto"</li>
+    <li>Matriz para comparar 3 ideias de venda</li>
+    <li>Modelo de oferta em uma página, com cálculo de preço mínimo</li>
+    <li>Mensagens para pedir indicação, abordar e responder objeções</li>
+    <li>Calendário de conteúdo de 7 dias, inclusive para quem não quer aparecer</li>
+    <li>Plano de execução de 7 dias, com rotina de 30 a 60 minutos</li>
+    <li>Planilha: ponto de partida, matriz, ficha de oferta, registro de contatos e revisão semanal com taxas calculadas</li>
+    <li>Anexos para imprimir: checklists e registro em papel</li>
+  </ul>
+  <p class="mini">Formatos: PDF (para ler e imprimir), Word (editável) e planilha .xlsx.</p>
+</div></section>
+
+<section><div class="w duas">
+  <div>
+    <h2>É para você se</h2>
+    <ul class="lista">
+      <li>Quer fazer as primeiras vendas pela internet e não sabe por onde começar</li>
+      <li>Tem de 30 a 60 minutos por dia</li>
+      <li>Prefere um método com tarefas a uma lista de ideias soltas</li>
+      <li>Quer vender sem anúncio pago</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Não é para você se</h2>
+    <ul class="lista nao">
+      <li>Procura renda rápida sem trabalho</li>
+      <li>Quer aprender tráfego pago</li>
+      <li>Já vende com frequência e quer escalar</li>
+    </ul>
+  </div>
+</div></section>
+
+<section class="areia"><div class="w">
+  <h2>O que o guia não promete</h2>
+  <p>Não promete renda, prazo ou venda garantida. Isso depende do que você oferece, para quem, a que preço e de quantas conversas você tem. Os exemplos do guia são simulações criadas para ensinar, não casos de alunos.</p>
+  <p>O que ele entrega: a ordem certa das tarefas, modelos para não começar do zero e uma forma de medir o que está acontecendo, para cada semana ser melhor que a anterior.</p>
+</div></section>
+
+<section><div class="w">
+  <h2>Complementos opcionais</h2>
+  <p>Você pode adicioná-los na página de pagamento. O guia funciona sem eles, e cada um funciona sozinho.</p>
+  <div class="cards" style="margin-top:18px">
+    <div class="card"><h3>Kit de Conversas que Vendem</h3>62 mensagens editáveis para cada momento da venda, com instruções de quando usar e versões para serviço, produto físico, produto digital e revenda.</div>
+    <div class="card"><h3>Fábrica de Conteúdo Orgânico</h3>10 estruturas, 60 pautas, 50 ganchos, 8 roteiros preenchidos e calendário de 30 dias para criar conteúdo que gera conversas.</div>
+    <div class="card"><h3>Painel das Primeiras Vendas</h3>Planilha que calcula suas taxas por semana e por canal, mostra quanto sobra depois de custos e taxas e aponta a etapa que trava.</div>
+  </div>
+</div></section>
+
+<section class="escuro" id="comprar"><div class="w" style="text-align:center">
+  <div class="rot">Pagamento único</div>
+  <div class="preco">PRECO</div>
+  <a class="btn" href="#checkout">Quero o Primeiras Vendas na Prática</a>
+  <p class="mini">Garantia de 7 dias: se não for o que você esperava, peça o reembolso pela própria plataforma, sem precisar justificar.</p>
+</div></section>
+
+<section><div class="w">
+  <h2>Perguntas frequentes</h2>
+  <details><summary>Vou conseguir vender depois de ler?</summary><p>Ninguém pode garantir isso. O guia te dá o caminho, as ferramentas e uma forma de medir. A venda depende da sua execução, do que você oferece e do público.</p></details>
+  <details><summary>Preciso já ter um produto?</summary><p>Não. O Módulo 2 ajuda a escolher o que vender, inclusive serviços e revenda, que não exigem produto próprio.</p></details>
+  <details><summary>Serve para afiliados?</summary><p>Serve, mas o guia não é focado em afiliação. Ele mostra por que, sem audiência, serviço e revenda costumam ser caminhos mais rápidos para a primeira venda.</p></details>
+  <details><summary>Preciso aparecer em vídeo?</summary><p>Não. O Módulo 5 mostra formatos sem aparecer, e grande parte das primeiras vendas vem de conversa direta.</p></details>
+  <details><summary>Preciso investir em anúncio?</summary><p>Não. O guia é todo orgânico.</p></details>
+  <details><summary>Quanto tempo por dia?</summary><p>De 30 a 60 minutos. O plano de 7 dias foi montado para caber nisso.</p></details>
+  <details><summary>Como recebo?</summary><p>Logo depois da confirmação do pagamento, pelo e-mail e pela área do comprador da plataforma.</p></details>
+  <details><summary>Funciona no celular?</summary><p>O PDF abre em qualquer celular. A planilha funciona no app do Google Planilhas.</p></details>
+  <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias para pedir o reembolso integral pela plataforma.</p></details>
+  <details><summary>Os exemplos são casos reais?</summary><p>Não. São simulações identificadas como tal, criadas para ensinar. O guia não usa depoimentos nem resultados de terceiros.</p></details>
+</div></section>
+
+<section class="areia"><div class="w" style="text-align:center">
+  <h2>Comece pelo Módulo 1 hoje</h2>
+  <a class="btn" href="#checkout">Quero o guia</a>
+</div></section>
+
+<footer class="w">Primeiras Vendas na Prática · Este produto não garante vendas, renda ou resultados financeiros. Taxas de plataformas e regras de redes sociais mudam: confira sempre as fontes oficiais.</footer>
+</body>
+</html>
