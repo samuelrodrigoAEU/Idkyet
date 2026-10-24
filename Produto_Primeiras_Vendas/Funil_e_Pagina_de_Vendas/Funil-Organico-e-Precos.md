@@ -153,7 +153,7 @@ O arquivo `pagina-de-vendas.html` contém o texto completo e o layout, pronto pa
 | Público do TikTok | Muitos iniciantes com pouca renda disponível; a ética da página exige não forçar compra cara |
 | Concorrência | Há ebooks de "primeira venda" no marketplace com promessas agressivas; não foi possível verificar seus preços nesta pesquisa |
 
-**Hipótese principal: R$ 27.** Hipóteses de teste: R$ 19 (mais impulso, menos margem) e R$ 37 (mais margem, testar depois que existirem vendas a R$ 27).
+**Preço definido na Kiwify: R$ 30.** (A hipótese inicial era R$ 27.) Hipóteses de teste para depois: R$ 19 a R$ 27 (mais impulso, menos margem) e R$ 37 (mais margem, só depois de vendas recorrentes a R$ 30).
 
 ### 9.2 Order bumps
 
@@ -175,9 +175,10 @@ Taxa usada para ilustrar: **8,99% + R$ 2,49 por venda**, valor citado por blogs 
 |---|---:|---:|---:|
 | Só o principal a R$ 19 | R$ 19,00 | R$ 4,20 | R$ 14,80 |
 | Só o principal a R$ 27 | R$ 27,00 | R$ 4,92 | R$ 22,08 |
+| **Só o principal a R$ 30 (preço atual)** | R$ 30,00 | R$ 5,19 | R$ 24,81 |
 | Só o principal a R$ 37 | R$ 37,00 | R$ 5,82 | R$ 31,18 |
-| R$ 27 + Kit de Conversas (R$ 14,90) | R$ 41,90 | R$ 6,26 | R$ 35,64 |
-| R$ 27 + os três bumps (R$ 42,70) | R$ 69,70 | R$ 8,76 | R$ 60,94 |
+| R$ 30 + Kit de Conversas (R$ 14,90) | R$ 44,90 | R$ 6,53 | R$ 38,37 |
+| R$ 30 + os três bumps (R$ 42,70) | R$ 72,70 | R$ 9,03 | R$ 63,67 |
 
 Sem anúncios, o custo de aquisição é o seu tempo; a margem financeira é confortável. Se um dia houver tráfego pago, refaça a conta com o custo por venda.
 
@@ -198,13 +199,13 @@ Sem anúncios, o custo de aquisição é o seu tempo; a margem financeira é con
 
 1. **Semanas 1 e 2:** publique os carrosséis de atrair e educar. Para cada um, registre comentários com pergunta e mensagens recebidas. Não julgue por visualizações.
 2. **Semana 3:** publique C11. Conte quantas pessoas comentam PASSO e quantas abrem a conversa.
-3. **Semana 4:** publique C12 e teste o preço principal (R$ 27).
+3. **Semana 4:** publique C12 com o preço principal (R$ 30).
 4. **Revisão:** os 3 temas com mais comentários de intenção viram série (mais 3 conteúdos cada). Os 3 com menos são reescritos com outro gancho ou descartados.
 
 ### Regras de decisão (hipóteses para começar)
 
 - **Mantenha o tema** que gerou mais comentários com pergunta e mensagens, mesmo com menos alcance.
-- **Teste o preço R$ 19** se várias pessoas pedirem o link, abrirem a página e ninguém comprar; antes, confira se a página carrega bem e se o checkout funciona no celular.
-- **Teste R$ 37** só depois de vendas recorrentes a R$ 27 e reembolsos baixos.
+- **Teste um preço menor (R$ 27 ou R$ 19)** se várias pessoas pedirem o link, abrirem a página e ninguém comprar; antes, confira se a página carrega bem e se o checkout funciona no celular.
+- **Teste R$ 37** só depois de vendas recorrentes a R$ 30 e reembolsos baixos.
 - **Não conclua nada com poucos dados:** menos de 20 pessoas que abriram a página não permitem comparar preços.
 - **Pergunte a quem comprou** de onde veio e o que quase impediu a compra; isso vale mais do que qualquer métrica.

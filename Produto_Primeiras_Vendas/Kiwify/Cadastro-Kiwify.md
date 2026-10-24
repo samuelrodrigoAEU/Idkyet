@@ -8,7 +8,7 @@ As imagens não trazem preço de propósito. Assim, se você mudar o valor na Ki
 
 | Produto | Tipo na Kiwify | Preço sugerido | Imagem 300×250 | Versão nítida (600×500) | Arquivos de entrega |
 |---|---|---:|---|---|---|
-| Primeiras Vendas na Prática | Produto principal | **R$ 27,00** | `imagens/01-primeiras-vendas-na-pratica.png` | `…@2x.png` | `Entrega-Primeiras-Vendas-na-Pratica.zip` |
+| Primeiras Vendas na Prática | Produto principal | **R$ 30,00** (definido na Kiwify) | `imagens/01-primeiras-vendas-na-pratica.png` | `…@2x.png` | `Entrega-Primeiras-Vendas-na-Pratica.zip` |
 | Kit de Conversas que Vendem | Order bump 1 | **R$ 14,90** | `imagens/02-kit-de-conversas-que-vendem.png` | `…@2x.png` | `Entrega-Kit-de-Conversas-que-Vendem.zip` |
 | Fábrica de Conteúdo Orgânico | Order bump 2 | **R$ 14,90** | `imagens/03-fabrica-de-conteudo-organico.png` | `…@2x.png` | `Entrega-Fabrica-de-Conteudo-Organico.zip` |
 | Painel das Primeiras Vendas | Order bump 3 | **R$ 12,90** | `imagens/04-painel-das-primeiras-vendas.png` | `…@2x.png` | `Entrega-Painel-das-Primeiras-Vendas.zip` |
@@ -22,7 +22,7 @@ As imagens não trazem preço de propósito. Assim, se você mudar o valor na Ki
 **Nome do produto**
 > Primeiras Vendas na Prática
 
-**Preço sugerido:** R$ 27,00 (pagamento único)
+**Preço:** R$ 30,00 (pagamento único, valor cadastrado na Kiwify)
 
 **Descrição curta** (até cerca de 150 caracteres)
 > Guia com o Método PASSO para escolher o que vender, montar uma oferta clara, achar quem tem interesse e conduzir a venda até o pagamento.
@@ -138,11 +138,11 @@ Calculado com a taxa de **8,99% + R$ 2,49 por venda**, valor citado por blogs e 
 
 | Pedido | Valor | Taxa estimada | Sobra antes de impostos |
 |---|---:|---:|---:|
-| Só o guia | R$ 27,00 | R$ 4,92 | R$ 22,08 |
-| Guia + Kit de Conversas | R$ 41,90 | R$ 6,26 | R$ 35,64 |
-| Guia + Fábrica de Conteúdo | R$ 41,90 | R$ 6,26 | R$ 35,64 |
-| Guia + Painel | R$ 39,90 | R$ 6,08 | R$ 33,82 |
-| Guia + os 3 complementos | R$ 69,70 | R$ 8,76 | R$ 60,94 |
+| Só o guia | R$ 30,00 | R$ 5,19 | R$ 24,81 |
+| Guia + Kit de Conversas | R$ 44,90 | R$ 6,53 | R$ 38,37 |
+| Guia + Fábrica de Conteúdo | R$ 44,90 | R$ 6,53 | R$ 38,37 |
+| Guia + Painel | R$ 42,90 | R$ 6,35 | R$ 36,55 |
+| Guia + os 3 complementos | R$ 72,70 | R$ 9,03 | R$ 63,67 |
 
 ## Cuidados no cadastro
 
