@@ -20,6 +20,7 @@ Produto digital de entrada para quem quer fazer as primeiras vendas pela interne
 | `Funil_e_Pagina_de_Vendas/Funil-Organico-e-Precos.md` | Posicionamento, bio, estratégia de conteúdo, fixados, CTAs, sequência de mensagens, textos do checkout, hipóteses de preço e plano de testes |
 | `Funil_e_Pagina_de_Vendas/pagina-de-vendas.html` | Página de vendas completa (texto e layout), feita para celular |
 | `Identidade_Visual/` | Guia de identidade (`Identidade-Visual.md`), estilos (`documento.css`, `carrossel.css`) e fontes |
+| `Kiwify/` | Textos de cadastro, preços sugeridos e imagens 300×250 (e versão @2x 600×500) do guia e dos 3 complementos |
 | `Documentacao/` | Pesquisa e posicionamento, checklist de publicação, controle de qualidade, progresso e pendências |
 
 ## Arquivos-fonte e como regenerar
@@ -50,6 +51,7 @@ Os pacotes ZIP abaixo foram entregues na conversa. Para recriá-los na pasta `Do
 | `Entrega-Fabrica-de-Conteudo-Organico.zip` | Entrega do bump 2 |
 | `Entrega-Painel-das-Primeiras-Vendas.zip` | Entrega do bump 3 |
 | `Carrosseis-TikTok-PNG.zip` | Os 23 carrosséis e o roteiro |
+| `Kiwify-Textos-e-Imagens.zip` | Textos de cadastro e imagens para a Kiwify |
 | `Projeto-Completo.zip` | O projeto inteiro, com arquivos-fonte e scripts |
 
 A página de vendas também tem uma versão em arquivo único (`pagina-de-vendas-arquivo-unico.html`), com as fontes embutidas, que abre direto no navegador.
