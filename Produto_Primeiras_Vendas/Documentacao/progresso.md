@@ -13,7 +13,7 @@
 
 ## Pendências reais (dependem de você ou de acesso que este ambiente não tinha)
 1. Confirmar as taxas oficiais da plataforma de pagamento (o valor usado vem de blogs).
-2. Definir o preço e publicar o produto e os bumps; trocar `#checkout` e `PRECO` na página.
+2. Checkout aplicado na página (https://pay.kiwify.com.br/RMNV6x2) e publicada no repositório `metodopasso`; conferir se o preço exibido (R$ 27) bate com a Kiwify e ativar o GitHub Pages.
 3. Conferir no app do TikTok: link na bio, limite de imagens por carrossel e exibição em 1080 × 1920.
 4. Verificar a disponibilidade do nome (INPI e marketplace).
 5. Validação comercial: ainda não existe nenhuma. Seguir o plano de testes do funil (seção 10).
